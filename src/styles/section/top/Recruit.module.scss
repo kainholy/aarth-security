@@ -1,0 +1,34 @@
+@import "../../foundation/color.scss";
+
+.recruit {
+    background: $bg-gray;
+}
+.container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-left: min(calc(190 / 1440 * 100%), 19rem);
+    padding-right: min(calc(190 / 1440 * 100%), 19rem);
+    display: flex;
+    justify-content: space-between;
+}
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    margin-top: 2.4rem;
+}
+.btn {
+    margin-top: 4rem;
+}
+.imgArea {
+    width: 48%;
+}
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

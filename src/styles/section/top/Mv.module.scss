@@ -1,0 +1,73 @@
+@import "../../foundation/color.scss";
+
+.container {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+
+}
+.company {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+}
+.logoArea {
+    width: 9.5rem;
+    height: 10.5rem;
+}
+.logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.textArea {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.span {
+    content: "";
+    display: block;
+    width: 0.1rem;
+    height: 2rem;
+    background-color: $black;
+}
+.sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.banner {
+    display: inline-flex;
+    background: $indigo;
+    padding: 1.6rem 1.7rem;
+    gap: 2rem;
+}
+.arrow {
+    display: block;
+    transform: rotate(-45deg);
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: right;
+}
+.thumbnailArea {
+    width: 100%;
+    padding-right: min(5.5vw, 8rem);;
+}
+.thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

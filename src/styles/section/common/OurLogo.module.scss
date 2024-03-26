@@ -1,0 +1,62 @@
+@import '../../foundation/color.scss';
+
+.container {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 144rem;
+    padding-left: min(calc(190 / 1440 * 100%), 19rem);
+    padding-right: min(calc(190 / 1440 * 100%), 19rem);
+}
+.title {
+    width: 100%;
+}
+.titleEn,
+.titleJa,
+.text {
+    text-align: center;
+}
+.text {
+    margin-top: 2.4rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    &__left,
+    &__right {
+        width: calc(290 / 1060 * 100%);
+    }
+    &__imgArea {
+        width: calc(236 / 1060 * 100%);
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__line {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: $black;
+        margin-top: 2.2rem;
+        margin-bottom: 2.4rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}
+.textArea {
+    margin-top: 8rem;
+    text-align: center;
+}
+.textArea__text {
+    margin-top: 2.4rem;
+}

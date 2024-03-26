@@ -1,0 +1,24 @@
+.container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+    display: flex;
+    justify-content: center;
+}
+.contents {
+    margin-top: 4rem;
+}
+.textArea {
+    width: calc(290 / 1280 * 100%);
+}
+
+.mapArea {
+    width: calc(950 / 1280 * 100%);
+}
+.map {
+    width: 100%;
+    aspect-ratio: 950 / 456;
+}

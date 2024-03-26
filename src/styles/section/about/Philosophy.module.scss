@@ -1,0 +1,33 @@
+@import "../../foundation/color.scss";
+.philosophy {
+
+}
+.container {
+    padding-top:12rem;
+    padding-bottom: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 144rem;
+    padding-left: min(calc(190 / 1440 * 100%), 19rem);
+    padding-right: min(calc(190 / 1440 * 100%), 19rem);
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    width: calc(620 / 1060 * 100%);
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+}
+.item + .item {
+    border-top: 1px solid $black;
+}
+.item {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &__title {
+        margin-top: .8rem;
+    }
+    &__text {
+        margin-top: 2.4rem;
+    }
+}

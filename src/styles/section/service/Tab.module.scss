@@ -1,0 +1,31 @@
+@import '../../foundation/color.scss';
+
+.container {
+    display: flex;
+    border-bottom: 1px solid $black;
+}
+.button {
+    width: calc(100% / 3);
+    height: 14.8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activeButton {
+    background: $indigo;
+    .number {
+        color: $white;
+    }
+    .text {
+        color: $white;
+    }
+}
+.number {
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+}
+.button + .button {
+    border-left: 1px solid $black;
+}

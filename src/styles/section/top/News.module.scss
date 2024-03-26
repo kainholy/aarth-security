@@ -1,0 +1,26 @@
+@import "../../foundation/color.scss";
+
+.container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-left: min(calc(150 / 1440 * 100%), 15rem);
+    padding-right: min(calc(150 / 1440 * 100%), 15rem);
+    display: flex;
+    justify-content: space-between;
+}
+.contents {
+    width: calc(660 / 1140 * 100%);
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+}
+.item + .item {
+    border-top: 1px solid $black;
+}
+.item {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}

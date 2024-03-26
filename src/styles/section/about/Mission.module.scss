@@ -1,0 +1,33 @@
+@import "../../foundation/color.scss";
+
+.mission {
+    border-bottom: 1px solid $black;
+}
+.container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 144rem;
+    padding-left: min(calc(80 / 1440 * 100%), 8rem);
+    padding-right: min(calc(80 / 1440 * 100%), 8rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner {
+    width: calc(622 / 1440 * 100%);
+    display: flex;
+    justify-content: center;
+}
+.text {
+    margin-top: 1.6rem;
+}
+.imgArea {
+    width: calc(660 / 1440 * 100%);
+}
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

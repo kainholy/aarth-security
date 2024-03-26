@@ -1,0 +1,51 @@
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+}
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+.logoLink {
+    width: fit-content;
+    display: block;
+}
+.logoArea {
+    width: 9.5rem;
+}
+.logo,
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.textArea {
+    margin-top: 2.4rem;
+}
+.text {
+    margin-top: 2.4rem;
+}
+.name {
+    margin-top: .8rem;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.item {
+    text-align: right;
+}
+.link {
+    font-weight: 700;
+}
+.copy {
+    margin-bottom: 4rem;
+}
+.imgArea {
+    width: 100%;
+}

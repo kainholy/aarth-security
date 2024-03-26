@@ -1,0 +1,44 @@
+@import "../../foundation/color.scss";
+
+.messageFromCEO {
+    background: $bg-gray;
+}
+.container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 144rem;
+    padding-left: min(calc(80 / 1440 * 100%), 8rem);
+    padding-right: min(calc(80 / 1440 * 100%), 8rem);
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgArea {
+    width: calc(510 / 1280 * 100%);
+}
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.inner {
+    width: calc(730 / 1280 * 100%);
+    display: flex;
+    justify-content: center;
+}
+.textArea {
+    width: calc(510 / 730 * 100%);
+
+}
+.text {
+    margin-top: 2.4rem;
+}

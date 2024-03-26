@@ -1,0 +1,29 @@
+@import "../../foundation/color.scss";
+
+.contact {
+    width: 100%;
+    height: auto;
+    background: url('/common/contact/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title,
+.text {
+    width: 100%;
+    text-align: center;
+}
+.text {
+    margin-top: 2.4rem;
+}
+.btn {
+    margin-top: 4rem;
+    background: $white;
+}

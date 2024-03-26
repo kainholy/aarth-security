@@ -1,0 +1,265 @@
+@import './foundation/reset.scss';
+@import './foundation/mixin.scss';
+@import './foundation/color.scss';
+@import './foundation/font.scss';
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: $bg;
+    color: $black;
+}
+
+.pc {
+    @include sp {
+        display: none !important;
+    }
+}
+
+.sp {
+    @include pc {
+        display: none !important;
+    }
+}
+
+// 文字スタイル
+.c-top-mv-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(3.2rem, calc(56 / 1440 * 100vw), 5.6rem);
+    letter-spacing: 1%;
+    line-height: 140%;
+}
+.c-top-mv-company-name {
+    font-family: $hn;
+    font-weight: $medium;
+    font-size: clamp(1.6rem, calc(20 / 1440 * 100vw), 2rem);
+    letter-spacing: 1%;
+}
+.c-top-mv-parent-company-name {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.2rem, calc(13 / 1440 * 100vw), 1.3rem);
+    letter-spacing: 1%;
+}
+.c-top-mv-link-text {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(1.2rem, calc(14 / 1440 * 100vw), 1.4rem);
+    letter-spacing: 1%;
+}
+.c-top-service-number {
+    font-family: $hn;
+    font-weight: $regular;
+    font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+    font-size: 1.6rem;
+    letter-spacing: 1%;
+}
+.c-top-service-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    letter-spacing: 1%;
+}
+.c-top-recruit-text {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+    line-height: 180%;
+}
+.c-top-news-date {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: 1rem;
+    letter-spacing: 1%;
+    opacity: .8;
+}
+.c-footer-name {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.4rem, calc(18 / 1440 * 100vw), 1.8rem);
+    letter-spacing: 1%;
+    .c-footer-name-en {
+        font-family: $hn;
+    }
+}
+.c-footer-text {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.2rem, calc(15 / 1440 * 100vw), 1.5rem);
+    letter-spacing: 1%;
+}
+.c-footer-copy {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: 1rem;
+    letter-spacing: 1%;
+}
+// about
+.c-about-mission-title2 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    &-en {
+        font-family: $hn;
+        font-weight: $bold;
+        font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+        letter-spacing: 2%;
+    }
+    &-ja {
+        font-family: $noto;
+        font-weight: $medium;
+        font-size: clamp(3rem, calc(44 / 1440 * 100vw), 4.4rem);
+        letter-spacing: 1%;
+        line-height: 140%;
+    }
+}
+.c-about-philosophy-number {
+    font-family: $hn;
+    font-weight: $medium;
+    font-size: clamp(1.3rem, calc(20 / 1440 * 100vw), 2rem);
+    letter-spacing: 2%;
+}
+.c-about-philosophy-title {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(1.8rem, calc(29 / 1440 * 100vw), 2.9rem);
+}
+.c-about-messageFromCEO-title {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(2.2rem, calc(29 / 1440 * 100vw), 2.9rem);
+}
+.c-about-ourLogo-content-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(2rem, calc(28 / 1440 * 100vw), 2.8rem);
+}
+.c-about-ourLogo-content-text {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
+}
+.c-about-ourLogo-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(2.2rem, calc(32 / 1440 * 100vw), 3.2rem);
+}
+// service
+.c-service-tab-text {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    letter-spacing: 1%;
+}
+.c-service-tab-number {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    letter-spacing: 1%;
+}
+.c-service-content-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(2.6rem, calc(32 / 1440 * 100vw), 3.2rem);
+    letter-spacing: 1%;
+}
+.c-service-content-text {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(18 / 1440 * 100vw), 1.8rem);
+    line-height: 200%;
+}
+// 固定スタイル
+.c-title1 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: .8rem;
+    &-en {
+        font-family: $hn;
+        font-weight: $bold;
+        font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+        letter-spacing: 2%;
+    }
+    &-ja {
+        font-family: $noto;
+        font-weight: $bold;
+        font-size: clamp(3rem, calc(50 / 1440 * 100vw), 5rem);
+        letter-spacing: 1%;
+    }
+}
+.c-title2 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: .8rem;
+    &-en {
+        font-family: $hn;
+        font-weight: $bold;
+        font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+        letter-spacing: 2%;
+    }
+    &-ja {
+        font-family: $noto;
+        font-weight: $bold;
+        font-size: clamp(3rem, calc(37 / 1440 * 100vw), 3.7rem);
+        letter-spacing: 1%;
+    }
+}
+.c-title3 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: .8rem;
+    &-en {
+        font-family: $hn;
+        font-weight: $bold;
+        font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.6rem);
+        letter-spacing: 2%;
+    }
+    &-ja {
+        font-family: $noto;
+        font-weight: $medium;
+        font-size: clamp(3rem, calc(29 / 1440 * 100vw), 2.9rem);
+        letter-spacing: 1%;
+    }
+}
+.c-body1 {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(14 / 1440 * 100vw), 1.4rem);
+    line-height: 200%;
+    .--bold {
+        font-weight: $bold;
+    }
+}
+// elements
+.c-btn {
+    background: $indigo;
+    padding: 1.6rem 2.7rem 1.6rem 3.2rem;
+    display: inline-flex;
+    gap: 1.6rem;
+    &-text,&-arrow {
+        font-family: $noto;
+        font-weight: $bold;
+        font-size: 1.4rem;
+    }
+}
+
+// color
+.bk {
+    color: $black;
+}
+.wh {
+    color: $white;
+}
+.ind {
+    color: $indigo;
+}
+.gr {
+    color: $gray;
+}
+.blue {
+    color: $blue;
+}
+.wh-gr {
+    color: $whiteGray;
+}
