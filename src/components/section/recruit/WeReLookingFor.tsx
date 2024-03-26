@@ -8,7 +8,7 @@ function WeReLookingFor() {
         <div className={styles.container}>
             <div className={styles.textArea}>
                 <h2 className={styles.title+' c-title3'}>
-                    <span className={styles.titleEn+' c-title3-en blue'}>We're Looking For</span>
+                    <span className={styles.titleEn+' c-title3-en blue'}>Were Looking For</span>
                     <span className={styles.titleJa+' c-title3-ja bk'}>求める人物像</span>
                 </h2>
                 <p className={styles.text+' c-body1 gr'}>
