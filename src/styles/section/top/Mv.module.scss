@@ -1,50 +1,20 @@
 @import "../../foundation/color.scss";
 
 .container {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-    max-width: 144rem;
-    margin: 0 auto;
-    padding-left: min(5.5vw, 8rem);
-    padding-right: min(5.5vw, 8rem);
-    display: flex;
-    justify-content: space-between;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 .title {
-
+    text-align: center;
 }
-.company {
-    padding-top: 4rem;
+.main {
     display: flex;
-    align-items: center;
-    gap: 3.6rem;
-}
-.logoArea {
-    width: 9.5rem;
-    height: 10.5rem;
-}
-.logo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.textArea {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
-.span {
-    content: "";
-    display: block;
-    width: 0.1rem;
-    height: 2rem;
-    background-color: $black;
-}
-.sub {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 144rem;
+    margin: 6.4rem auto 0;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
 }
 .banner {
     display: inline-flex;
@@ -56,15 +26,38 @@
     display: block;
     transform: rotate(-45deg);
 }
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    text-align: right;
+.text {
+    margin-right: -3.6rem;
 }
 .thumbnailArea {
     width: 100%;
-    padding-right: min(5.5vw, 8rem);;
+    position: relative;
+    padding-right: min(5.5vw, 8rem);
+}
+.scrollArea {
+    position: absolute;
+    top: -5.5rem;
+    right: min(calc(100 / 1440 * 100vw), 10rem);
+    background: $bg;
+    width: 11rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border: 0.1rem solid $indigo;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scrollArrow {
+    display: block;
+    font-size: 2rem;
 }
 .thumbnail {
     width: 100%;

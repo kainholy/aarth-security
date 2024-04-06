@@ -24,9 +24,9 @@ function Philosophy() {
     <section id='philosophy' className={styles.philosophy}>
         <div className={styles.container}>
             <div className={styles.titleArea}>
-                <h2 className={styles.title+' c-title2'}>
-                    <span className={styles.titleEn+' c-title2-en blue'}>Philosophy</span>
-                    <span className={styles.titleJa+' c-title2-ja bk'}>経営理念</span>
+                <h2 className={styles.title+' c-title3-bold'}>
+                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Philosophy</span>
+                    <span className={styles.titleJa+' c-title3-bold-ja bk'}>経営理念</span>
                 </h2>
             </div>
             <div className={styles.content}>
@@ -35,7 +35,7 @@ function Philosophy() {
                         <div key={index} className={styles.item}>
                             <p className={styles.item__number+' c-about-philosophy-number blue'}>{item.number}</p>
                             <h3 className={styles.item__title+' c-about-philosophy-title bk'}>{item.title}</h3>
-                            <p className={styles.item__text+' c-body1 bk'}>{item.text}</p>
+                            <p className={styles.item__text+' c-body1 gr'}>{item.text}</p>
                         </div>
                     ))
                 }

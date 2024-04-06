@@ -32,8 +32,8 @@ function Service() {
       <div className={styles.container}>
         <div className={styles.titleArea}>
             <h2 className={styles.title+' c-title2'}>
-                <span className={styles.titleEn+' c-title2-en blue'}>Service</span>
-                <span className={styles.titleJa+' c-title2-ja bk'}>サービス内容</span>
+                <span className={styles.titleEn+' c-title2-en ind'}>Service</span>
+                <span className={styles.titleJa+' c-title2-ja ind'}>サービス内容</span>
             </h2>
         </div>
         <div className={styles.contents}>
@@ -49,7 +49,7 @@ function Service() {
                         />
                     </div>
                     <div className={styles.item__textArea}>
-                        <p className={styles.item__number+' c-top-service-number blue'}>{item.number}</p>
+                        <p className={styles.item__number+' c-top-service-number ind'}>{item.number}</p>
                         <p className={styles.item__title+' c-top-service-title bk'}>{item.title}</p>
                         <p className={styles.item__text+' c-body1 gr'}>{item.text}</p>
                     </div>
@@ -59,8 +59,8 @@ function Service() {
 
         <div className={styles.btnArea}>
             <Link href="/service" className={styles.btn+" c-btn"}>
-                <span className={styles.btn__text+' c-btn-text wh-gr'}>詳しく見る</span>
-                <span className={styles.btn__arrow+' c-btn-text wh-gr'}>→</span>
+                <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
+                <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
             </Link>
         </div>
 

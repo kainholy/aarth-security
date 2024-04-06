@@ -27,7 +27,7 @@ function Footer() {
                     </div>
                 </div>
                 <ul className={styles.list}>
-                    <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/service">サービス</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/service">サービス内容</Link></li>
                     <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/about">私たちについて</Link></li>
                     <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/recruit">採用情報</Link></li>
                 </ul>

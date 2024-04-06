@@ -7,7 +7,7 @@ function Contact() {
     <section id='contact' className={styles.contact}>
         <div className={styles.container}>
             <h2 className={styles.title+' c-title2'}>
-                <span className={styles.titleEn+' c-title2-en wh-gr'}>Contact</span>
+                <span className={styles.titleEn+' c-title2-en wh'}>Contact</span>
                 <span className={styles.titleJa+' c-title2-ja wh'}>お問い合わせ</span>
             </h2>
             <p className={styles.text+' c-body1 wh'}>

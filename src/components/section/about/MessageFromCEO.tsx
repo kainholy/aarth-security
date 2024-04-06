@@ -7,9 +7,9 @@ function MessageFromCEO() {
     <section id='message-from-CEO' className={styles.messageFromCEO}>
         <div className={styles.container}>
             <div className={styles.titleArea}>
-                <h2 className={styles.title+' c-title2'}>
-                    <span className={styles.titleEn+' c-title2-en blue'}>Message from CEO</span>
-                    <span className={styles.titleJa+' c-title2-ja bk'}>代表者メッセージ</span>
+                <h2 className={styles.title+' c-title3-bold'}>
+                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Message from CEO</span>
+                    <span className={styles.titleJa+' c-title3-bold-ja bk'}>代表者メッセージ</span>
                 </h2>
             </div>
             <div className={styles.content}>

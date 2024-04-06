@@ -1,6 +1,6 @@
 .container {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     max-width: 144rem;
     margin: 0 auto;
     padding-left: min(5.5vw, 8rem);
@@ -11,6 +11,20 @@
     justify-content: space-between;
     gap: calc(40 / 1280 * 100%);
     padding-top: 4rem;
+}
+.title {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 3.2rem;
+}
+.titleEn,
+.titleJa {
+    width: fit-content;
+    display: block;
+}
+.titleJa {
+    padding-bottom: 2rem;
 }
 .item {
     width: calc(100% / 3);
@@ -26,7 +40,7 @@
         margin-top: 1.6rem;
     }
     &__title {
-        margin-top: .4rem;
+        margin-top: .8rem;
     }
     &__text {
         margin-top: 1.6rem;

@@ -10,10 +10,10 @@ function Recruit() {
             <div className={styles.inner}>
                 <div className={styles.textArea}>
                     <h2 className={styles.title+' c-title2'}>
-                        <span className={styles.titleEn+' c-title2-en blue'}>Recruit</span>
-                        <span className={styles.titleJa+' c-title2-ja bk'}>採用情報</span>
+                        <span className={styles.titleEn+' c-title2-en ind'}>Recruit</span>
+                        <span className={styles.titleJa+' c-title2-ja ind'}>採用情報</span>
                     </h2>
-                    <p className={styles.text+' c-top-recruit-text'}>
+                    <p className={styles.text+' c-top-recruit-text gr'}>
                         豊富な経験を持つ仲間と一緒に警備のプロとして、<br />
                         安心安全な未来を築きませんか。<br /><br />
 
@@ -25,8 +25,8 @@ function Recruit() {
                         共に切磋琢磨できる新たな仲間を歓迎します。
                     </p>
                     <Link href="/recruit" className={styles.btn+" c-btn"}>
-                        <span className={styles.btn__text+' c-btn-text wh-gr'}>詳しく見る</span>
-                        <span className={styles.btn__arrow+' c-btn-text wh-gr'}>→</span>
+                        <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
+                        <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
                     </Link>
                 </div>
             </div>
