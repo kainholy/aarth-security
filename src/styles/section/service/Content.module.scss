@@ -1,4 +1,5 @@
 @import '../../foundation/color.scss';
+@import '../../foundation/mixin.scss';
 
 .container {
     padding-top: 10.8rem;
@@ -10,17 +11,33 @@
     padding-right: min(calc(80 / 1440 * 100%), 8rem);
     display: flex;
     justify-content: space-between;
+    @include sp {
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+        padding-left: min(calc(20 / 375 * 100%), 2rem);
+        padding-right: min(calc(20 / 375 * 100%), 2rem);
+        flex-direction: column;
+    }
 }
 .textArea {
     width: calc(620 / 1440 * 100%);
+    @include sp {
+        width: 100%;
+    }
 }
 .title { 
     padding-bottom: 4.8rem;
     white-space: pre-wrap;
+    @include sp {
+        padding-bottom: 2.4rem;
+    }
 }
 .text {
     padding-top: 4.8rem;
     white-space: pre-wrap;
+    @include sp {
+        padding-top: 2.4rem;
+    }
 }
 .line {
     content: '';
@@ -33,9 +50,16 @@
     width: calc(620 / 1440 * 100%);
     display: flex;
     justify-content: center;
+    @include sp {
+        width: 100%;
+        padding-top: 4rem;
+    }
 }
 .imgArea {
     width: calc(400 / 620 * 100%);
+    @include sp {
+        width: 100%;
+    }
 }
 .img {
     width: 100%;

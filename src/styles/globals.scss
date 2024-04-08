@@ -248,22 +248,34 @@ body {
     font-family: $noto;
     font-weight: $bold;
     font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    @include sp {
+        font-size: clamp(1.3rem, calc(13 / 375 * 100vw), 1.4rem);
+    }
 }
 .c-service-tab-number {
     font-family: $noto;
     font-weight: $bold;
     font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    @include sp {
+        font-size: clamp(1.3rem, calc(13 / 375 * 100vw), 1.6rem);
+    }
 }
 .c-service-content-title {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(2.6rem, calc(32 / 1440 * 100vw), 3.2rem);
+    @include sp {
+        font-size: clamp(2.2rem, calc(22 / 375 * 100vw), 2.6rem);
+    }
 }
 .c-service-content-text {
     font-family: $noto;
     font-weight: $regular;
-    font-size: clamp(1.2rem, calc(18 / 1440 * 100vw), 1.8rem);
+    font-size: clamp(1.3rem, calc(18 / 1440 * 100vw), 1.8rem);
     line-height: 200%;
+    @include sp {
+        font-size: clamp(1.3rem, calc(13 / 375 * 100vw), 1.4rem);
+    }
 }
 // 固定スタイル
 .c-title1 {
