@@ -1,4 +1,5 @@
 @import "../foundation/color.scss";
+@import "../foundation/mixin.scss";
 
 .detailMv {
     border-bottom: 1px solid $gray;
@@ -11,4 +12,10 @@
     max-width: 144rem;
     padding-left: min(calc(80 / 1440 * 100%), 8rem);
     padding-right: min(calc(80 / 1440 * 100%), 8rem);
+    @include sp {
+        margin-top: 14.4rem;
+        margin-bottom: 4rem;
+        padding-left: min(calc(20 / 375 * 100%), 2rem);
+        padding-right: min(calc(20 / 375 * 100%), 2rem);
+    }
 }

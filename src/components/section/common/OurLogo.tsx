@@ -46,7 +46,7 @@ function OurLogo() {
 
             <div className={styles.textArea}>
                 <p className={styles.textArea__title+' c-about-ourLogo-title bk'}>「仲間と団結し、広い視野で物事を捉えて飛躍する。」</p>
-                <p className={styles.textArea__text+' c-body1 gr'}>
+                <p className={styles.textArea__text+' c-body3 gr'}>
                     以上のような意味が込められた当社の大切なロゴマークです。<br />
                     経営理念を形にしたデザインで、この標章を身につけることで、あなたも私たちの大切な使命を担う一員となります。
                 </p>
