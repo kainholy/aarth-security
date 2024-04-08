@@ -27,9 +27,10 @@ function Footer() {
                     </div>
                 </div>
                 <ul className={styles.list}>
-                    <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/service">サービス内容</Link></li>
-                    <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/about">私たちについて</Link></li>
-                    <li className={styles.item}><Link className={styles.link+' c-body1 bk'} href="/recruit">採用情報</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/">トップ</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/service">サービス内容</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/about">私たちについて</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/recruit">採用情報</Link></li>
                 </ul>
             </div>
             <p className={styles.copy+' c-footer-copy gr'}>©2023 Aarth Security Co., Ltd.</p>
@@ -38,9 +39,16 @@ function Footer() {
             <Image
                 src="/footer/1.png"
                 alt="Aarth Security"
-                className={styles.img}
+                className={styles.img + ' pc'}
                 width={3000}
                 height={2000}
+            />
+            <Image
+                src="/footer/1_sp.png"
+                alt="Aarth Security"
+                className={styles.img + ' sp'}
+                width={1000}
+                height={1000}
             />
         </div>
     </footer>

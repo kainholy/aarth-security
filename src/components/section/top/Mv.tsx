@@ -24,7 +24,7 @@ function Mv() {
       </div>
 
       <div className={styles.thumbnailArea}>
-        <div className={styles.scrollArea}>
+        <div className={styles.scrollArea + ' pc'}>
           <div className={styles.circle}>
               <p className={styles.scrollArrow}>↓</p>
           </div>
@@ -32,7 +32,14 @@ function Mv() {
         <Image
           src="/top/mv/thumb.png"
           alt="堂々たる技術、誠実なサービス"
-          className={styles.thumbnail}
+          className={styles.thumbnail + ' pc'}
+          width={4000}
+          height={2000}
+        />
+        <Image
+          src="/top/mv/thumb_sp.png"
+          alt="堂々たる技術、誠実なサービス"
+          className={styles.thumbnail + ' sp'}
           width={4000}
           height={2000}
         />

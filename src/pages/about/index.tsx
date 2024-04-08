@@ -11,6 +11,7 @@ import Head from 'next/head'
 import React from 'react'
 import styles from '@/styles/pages/About.module.scss'
 import Header from '@/components/layout/Header'
+import CompanyOverview from '@/components/section/about/CompanyOverview'
 
 function About() {
   return (
@@ -30,6 +31,7 @@ function About() {
                 <MessageFromCEO />
                 <OurUniform />
                 <OurLogo />
+                <CompanyOverview />
                 <Contact />
                 <Access />
                 <Footer />

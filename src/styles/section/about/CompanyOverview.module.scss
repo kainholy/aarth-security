@@ -1,0 +1,50 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/font.scss";
+
+.container {
+    padding-top:12rem;
+    padding-bottom: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 144rem;
+    padding-left: min(calc(190 / 1440 * 100%), 19rem);
+    padding-right: min(calc(190 / 1440 * 100%), 19rem);
+}
+.content {
+    width: 100%;
+    padding-top: 4rem;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tr {
+    width: 100%;
+}
+.tr + .tr{
+    border-top: 2px solid $bg-gray;
+}
+.th {
+    padding: 1.8rem 0 1.8rem 3.2rem;
+    width: 30%;
+    background-color: rgba(0, 0, 0, .1);
+}
+.td {
+    width: 70%;
+    padding: 1.8rem 2.4rem;
+    white-space: pre-wrap;
+}
+.name:not(:first-child) {
+    padding-top: .8rem;
+}
+.name{ 
+    font-weight: $medium;
+    padding-bottom: .4rem;
+}
+.department {
+    padding-left: 2.4rem;
+    font-size: clamp(1.2rem, calc(14 / 1440 * 100vw), 1.4rem);
+}
+.caption {
+    font-size: clamp(1rem, calc(12 / 1440 * 100vw), 1.2rem);
+}

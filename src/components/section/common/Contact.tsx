@@ -10,7 +10,7 @@ function Contact() {
                 <span className={styles.titleEn+' c-title2-en wh'}>Contact</span>
                 <span className={styles.titleJa+' c-title2-ja wh'}>お問い合わせ</span>
             </h2>
-            <p className={styles.text+' c-body1 wh'}>
+            <p className={styles.text+' c-body2 wh'}>
                 イベント警備、交通誘導、駐車場警備など<br />
                 警備のことならどんなことでもお気軽にご相談ください。
             </p>

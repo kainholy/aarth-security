@@ -1,11 +1,21 @@
 @import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
 
 .container {
     padding-top: 12rem;
     padding-bottom: 12rem;
+    @include sp {
+        padding-top: 8.5rem;
+        padding-bottom: 4rem;
+        padding-left: min(calc(20 / 375 * 100vw), 2rem);
+        padding-right: min(calc(20 / 375 * 100vw), 2rem);
+    }
 }
 .title {
     text-align: center;
+    @include sp {
+        text-align: left;
+    }
 }
 .main {
     display: flex;
@@ -15,12 +25,24 @@
     margin: 6.4rem auto 0;
     padding-left: min(5.5vw, 8rem);
     padding-right: min(5.5vw, 8rem);
+    @include sp {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4rem;
+        margin-top: 1.6rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .banner {
     display: inline-flex;
     background: $indigo;
     padding: 1.6rem 1.7rem;
     gap: 2rem;
+    @include sp {
+        padding: 1.2rem 1.2rem;
+        gap: 1.2rem;
+    }
 }
 .arrow {
     display: block;
@@ -28,11 +50,19 @@
 }
 .text {
     margin-right: -3.6rem;
+    @include sp {
+        margin-right: 0;
+        order: -1;
+    }
 }
 .thumbnailArea {
     width: 100%;
     position: relative;
     padding-right: min(5.5vw, 8rem);
+    @include sp {
+        padding-right: 0;
+        padding-left: min(calc(20 / 375 * 100vw), 2rem);
+    }
 }
 .scrollArea {
     position: absolute;

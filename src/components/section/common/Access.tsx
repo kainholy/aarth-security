@@ -12,13 +12,14 @@ function Access() {
             <div className={styles.inner}>
                 <div className={styles.textArea}>
                     <div className={styles.contents}>
-                        <p className={styles.text+' c-body1'}>
+                        <p className={styles.text+' c-body2'}>
                             <span className={styles.bold+' --bold'}>本社</span><br />
                             〒120-0006<br />
                             東京都足立区谷中1-23-15<br />
                             TEL 03-5697-9333<br />
                             FAX 03-5697-9336<br /><br />
-
+                        </p>
+                        <p className={styles.text+' c-body2'}>
                             <span className={styles.bold+' --bold'}>神明営業所</span><br />
                             〒121-0051<br />
                             東京都足立区神明1-2-8　2F

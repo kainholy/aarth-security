@@ -1,3 +1,5 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
 .container {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -5,22 +7,55 @@
     margin: 0 auto;
     padding-left: min(5.5vw, 8rem);
     padding-right: min(5.5vw, 8rem);
+    @include sp {
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+        padding-left: min(calc(20 / 375 * 100%), 2rem);
+        padding-right: min(calc(20 / 375 * 100%), 2rem);
+    }
 }
 .inner {
     display: flex;
     justify-content: space-between;
-}
-.contents {
-    margin-top: 4rem;
+    @include sp {
+        flex-direction: column;
+        gap: 4rem;
+    }
 }
 .textArea {
     width: calc(290 / 1280 * 100%);
+    @include sp {
+        width: 100%;
+    }
+}
+.contents {
+    margin-top: 4rem;
+    @include sp {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 3.2rem;
+    }
+}
+.text {
+    width: 100%;
+}
+.text:first-child {
+    border-right: 1px solid $indigo;
 }
 
 .mapArea {
     width: calc(950 / 1280 * 100%);
+    @include sp {
+        width: 100%;
+    }
 }
 .map {
     width: 100%;
-    aspect-ratio: 950 / 456;
+    @include pc {
+        aspect-ratio: 950 / 456;
+    }
+    @include sp {
+        height: 45.6rem;
+    }
 }

@@ -27,11 +27,17 @@ body {
     font-family: $hn;
     font-weight: $medium;
     font-size: clamp(1.6rem, calc(20 / 1440 * 100vw), 2rem);
+    @include sp {
+        font-size: 1.2rem;
+    }
 }
 .c-header-parent-company-name {
     font-family: $noto;
     font-weight: $regular;
     font-size: clamp(1rem, calc(12 / 1440 * 100vw), 1.2rem);
+    @include sp {
+        font-size: 1rem;
+    }
 }
 .c-header-link {
     font-family: $noto;
@@ -41,40 +47,59 @@ body {
 .c-top-mv-title {
     font-family: $hn;
     font-weight: $bold;
-    font-size: clamp(15rem, calc(200 / 1440 * 100vw), 20rem);
+    font-size: clamp(9rem, calc(200 / 1440 * 100vw), 20rem);
     letter-spacing: -0.2rem;
     line-height: 100%;
+    @include sp {
+        font-size: clamp(7rem, calc(87 / 375 * 100vw), 9rem);
+    }
 }
 .c-top-mv-text {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(2.8rem, calc(36 / 1440 * 100vw), 3.6rem);
     line-height: 150%;
+    @include sp {
+        font-size: clamp(2rem, calc(20 / 375 * 100vw), 2.4rem);
+    }
 }
 .c-top-mv-link-text {
     font-family: $noto;
     font-weight: $bold;
     font-size: clamp(1.2rem, calc(15 / 1440 * 100vw), 1.5rem);
+    @include sp {
+        font-size: 1.2rem;
+    }
 }
 .c-top-about-bg-text {
     font-family: $hn;
     font-weight: $bold;
-    font-size: clamp(15rem, calc(200 / 1440 * 100vw), 20rem);
+    font-size: 20rem;
     letter-spacing: -0.2rem;
     line-height: 100%;
     opacity: .4;
+    @include sp {
+        font-size: 9rem;
+    }
 }
 .c-top-about-main-copy {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(3.6rem, calc(44 / 1440 * 100vw), 4.4rem);
     line-height: 150%;
+    @include sp {
+        font-size: clamp(2.8rem, calc(28 / 375 * 100vw), 3rem);
+    }
 }
 .c-top-about-sub-copy {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(1.6rem, calc(21 / 1440 * 100vw), 2.1rem);
     line-height: 220%;
+    @include sp {
+        font-size: clamp(1.5rem, calc(15 / 375 * 100vw), 1.8rem);
+        line-height: 200%;
+    }
 }
 .c-top-service-number {
     font-family: $hn;
@@ -85,12 +110,18 @@ body {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(1.8rem, calc(24 / 1440 * 100vw), 2.4rem);
+    @include sp {
+        font-size: clamp(1.8rem, calc(18 / 375 * 100vw), 2rem);
+    }
 }
 .c-top-recruit-text {
     font-family: $noto;
     font-weight: $regular;
-    font-size: clamp(1.3rem, calc(16 / 1440 * 100vw), 1.7rem);
+    font-size: clamp(1.4rem, calc(16 / 1440 * 100vw), 1.6rem);
     line-height: 180%;
+    @include sp {
+        font-size: clamp(1.4rem, calc(14 / 375 * 100vw), 1.6rem);
+    }
 }
 .c-top-news-date {
     font-family: $noto;
@@ -110,10 +141,21 @@ body {
     font-weight: $medium;
     font-size: clamp(1.2rem, calc(15 / 1440 * 100vw), 1.5rem);
 }
+.c-footer-link {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(14 / 1440 * 100vw), 1.4rem);
+    @include sp {
+        font-size: clamp(1.1rem, calc(11 / 375 * 100vw), 1.2rem);
+    }
+}
 .c-footer-copy {
     font-family: $noto;
     font-weight: $regular;
     font-size: 1rem;
+    @include sp {
+        font-size: .8rem;
+    }
 }
 // about
 .c-about-mission-title2 {
@@ -163,6 +205,17 @@ body {
     font-weight: $medium;
     font-size: clamp(2.2rem, calc(32 / 1440 * 100vw), 3.2rem);
 }
+.c-about-company-overview-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.4rem, calc(28 / 1440 * 100vw), 1.8rem);
+}
+.c-about-company-overview-text {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
+    line-height: 140%;
+}
 // service
 .c-service-tab-text {
     font-family: $noto;
@@ -209,11 +262,18 @@ body {
         font-weight: $bold;
         font-size: clamp(9rem, calc(110 / 1440 * 100vw), 11rem);
         margin-left: -.5rem;
+        @include sp {
+            font-size: clamp(6rem, calc(60 / 375 * 100vw), 7rem);
+            margin-left: 0;
+        }
     }
     &-ja {
         font-family: $noto;
         font-weight: $bold;
         font-size: clamp(1.5rem, calc(20 / 1440 * 100vw), 2rem);
+        @include sp {
+            font-size: clamp(1.6rem, calc(16 / 375 * 100vw), 1.8rem);
+        }
     }
 }
 .c-title3-bold {
@@ -251,8 +311,20 @@ body {
     font-weight: $regular;
     font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
     line-height: 200%;
+    @include sp {
+        font-size: clamp(1rem, calc(13 / 375 * 100vw), 1.6rem);
+    }
+}
+.c-body2 {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
+    line-height: 200%;
     .--bold {
         font-weight: $bold;
+    }
+    @include sp {
+        font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
     }
 }
 // elements
@@ -261,10 +333,17 @@ body {
     padding: 1.6rem 2.7rem 1.6rem 3.2rem;
     display: inline-flex;
     gap: 1.6rem;
+    @include sp {
+        padding: 1.2rem 2.1rem 1.2rem 2.4rem;
+        gap: 1.2rem;
+    }
     &-text,&-arrow {
         font-family: $noto;
         font-weight: $bold;
         font-size: 1.4rem;
+        @include sp {
+            font-size: 1.2rem;
+        }
     }
 }
 
