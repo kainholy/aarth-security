@@ -86,7 +86,7 @@
         margin-top: 4rem;
     }
 }
-.imgArea {
+.imgContainer {
     width: 100%;
     padding-top: 12rem;
     padding-left: min(calc(410 / 1440 * 100vw), 41rem);
@@ -95,8 +95,15 @@
         padding-left: 0;
     }
 }
+.imgArea {
+    width: 100%;
+    aspect-ratio: 1029 / 604;
+}
 .img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    background: url('/top/about/1.png');
+    background-size: 108%;
+    background-position: center;
+    background-repeat: no-repeat;
 }

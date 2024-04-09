@@ -42,12 +42,16 @@
 }
 .imgArea {
     width: 48%;
+    aspect-ratio: 589 / 792.47;
     @include sp {
         width: 100%;
     }
 }
 .img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    background: url('/top/recruit/1.png');
+    background-size: 106%;
+    background-position: center;
+    background-repeat: no-repeat;
 }

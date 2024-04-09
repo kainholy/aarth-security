@@ -12,6 +12,7 @@ function Header() {
         setOpen(!open)
     }
 
+
   return (
     <header className={styles.header} id='header'>
         <div className={styles.container}>
