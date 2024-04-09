@@ -55,7 +55,7 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 2.4rem;
     @include sp {
         gap: 1.4rem;
         flex-direction: row;
