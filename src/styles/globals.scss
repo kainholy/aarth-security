@@ -45,6 +45,11 @@ body {
     font-weight: $bold;
     font-size: clamp(1.3rem, calc(14 / 1440 * 100vw), 1.4rem);
 }
+.c-han-nav-link {
+    font-family: $noto;
+    font-weight: $bold;
+    font-size: clamp(1.6rem, calc(16 / 375 * 100vw), 1.8rem);
+}
 .c-top-mv-title {
     font-family: $hn;
     font-weight: $bold;
