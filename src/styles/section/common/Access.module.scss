@@ -40,8 +40,10 @@
 .text {
     width: 100%;
 }
-.text:first-child {
-    border-right: 1px solid $indigo;
+@include sp {
+    .text:first-child {
+        border-right: 1px solid $indigo;
+    }
 }
 
 .mapArea {

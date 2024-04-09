@@ -1,0 +1,28 @@
+@import "../foundation/color.scss";
+@import "../foundation/mixin.scss";
+.headerButton {
+    position: relative;
+    width: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    z-index: 1000;
+}
+.headerButton[aria-expanded="true"] > .line1 {
+    transform: translate(2px, 4px) rotateZ(-45deg);
+}
+
+.headerButton[aria-expanded="true"] > .line2 {
+    transform: translate(2px, -3px) rotateZ(45deg);
+}
+
+.line1,
+.line2 {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: $indigo;
+    transition: .3s ease-out;
+    transform-origin: center;
+}

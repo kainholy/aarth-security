@@ -1,25 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import styles from '@/styles/layout/Header.module.scss'
 import Link from 'next/link'
-import gsap from "gsap";
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+import HeaderButton from '../element/HeaderButton';
+import HeaderNav from '../element/HeaderNav';
 
 function Header() {
-    const textRef = useRef(null)
 
-    useEffect(() => {
-        const text = textRef.current;
-
-        addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                gsap.to(text, {autoAlpha: 0, duration: 0.5, ease: 'power2.out'})
-            } else {
-                gsap.to(text, {autoAlpha: 1, duration: 0.5, ease: 'power2.out'})
-            }
-        })
-    }, [])
+    const [open, setOpen] = useState(false)
+    const toggleFunction = () => {
+        setOpen(!open)
+    }
 
   return (
     <header className={styles.header} id='header'>
@@ -35,15 +26,15 @@ function Header() {
                             height={300}
                         />
                     </Link>
-                    <div className={styles.textArea} ref={textRef}>
+                    <div className={styles.textArea}>
                         <p className={styles.name+' c-header-company-name bk'}>Aarth Security</p>
                         <span className={styles.span}></span>
                         <p className={styles.parent+' c-header-parent-company-name bk'}>株式会社アールウェイブ</p>
                     </div>
                 </div>
             </div>
-            <div className={styles.sub}>
-                <ul className={styles.list + ' pc'}>
+            <div className={styles.sub + ' pc'}>
+                <ul className={styles.list}>
                     <li className={styles.link + ' c-header-link bk'}><Link href="/">トップ</Link></li>
                     <li className={styles.link + ' c-header-link bk'}><Link href="/service">サービス内容</Link></li>
                     <li className={styles.link + ' c-header-link bk'}><Link href="/about">私たちについて</Link></li>
@@ -56,7 +47,9 @@ function Header() {
                     </li>
                 </ul>
             </div>
+            <HeaderButton open={open} onClick={toggleFunction} />
         </div>
+        <HeaderNav open={open} />
     </header>
   )
 }
