@@ -12,6 +12,8 @@ function Mv() {
   const text2Ref = useRef(null)
   const bgSpan2Ref = useRef(null)
   const scrollAreaRef = useRef(null)
+  const scrollArrowRef = useRef(null)
+  const scrollArrow2Ref = useRef(null)
 
   useEffect(() => {
       const text = textRef.current;
@@ -19,9 +21,11 @@ function Mv() {
       const text2 = text2Ref.current;
       const bgSpan2 = bgSpan2Ref.current;
       const scrollArea = scrollAreaRef.current;
+      const scrollArrow = scrollArrowRef.current;
       const mm = gsap.matchMedia()
       const tl = gsap.timeline();
       mm.add(`(min-width: 769px)`, () => {
+        gsap.fromTo(scrollArrow, {y: -50}, { delay: 1, y: 50, duration: 2, ease: 'power1.inOut', repeat: -1, repeatDelay: .5})
         tl
         .fromTo([text, text2], { clipPath: "inset(0 100% 0 0)" }, {
             clipPath: "inset(0 0% 0 0)",
@@ -66,7 +70,7 @@ function Mv() {
 
           <div className={styles.main}>
             <div className={styles.bannerArea}>
-              <Link className={styles.banner} href="/recruit" scroll={false}>
+              <Link className={styles.banner + ' c-mv-button'} href="/recruit" scroll={false}>
                 <span className={styles.btn__text+' c-btn-text wh'}>仲間募集中！採用情報をcheck</span>
                 <span className={styles.arrow+' c-btn-arrow wh'}>→</span>
               </Link>
@@ -81,7 +85,9 @@ function Mv() {
       <div className={styles.thumbnailArea}>
         <div className={styles.scrollArea + ' pc'} ref={scrollAreaRef}>
           <div className={styles.circle}>
-              <p className={styles.scrollArrow}>↓</p>
+              <div className={styles.scrollArrowArea}>
+                <p className={styles.scrollArrow + ' js-scroll-arrow'} ref={scrollArrowRef}>↓</p>
+              </div>
           </div>
         </div>
         <Image
