@@ -18,7 +18,7 @@ function Header() {
         <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.company}>
-                    <Link className={styles.logoArea} href='/'>
+                    <Link className={styles.logoArea} href='/' scroll={false}>
                         <Image
                             src="/top/mv/logo.png"
                             alt="Aarth Security Logo"
@@ -36,10 +36,10 @@ function Header() {
             </div>
             <div className={styles.sub + ' pc'}>
                 <ul className={styles.list}>
-                    <li className={styles.link + ' c-header-link bk'}><Link href="/">トップ</Link></li>
-                    <li className={styles.link + ' c-header-link bk'}><Link href="/service">サービス内容</Link></li>
-                    <li className={styles.link + ' c-header-link bk'}><Link href="/about">私たちについて</Link></li>
-                    <li className={styles.link + ' c-header-link bk'}><Link href="/recruit">採用情報</Link></li>
+                    <li className={styles.link + ' c-header-link bk'}><Link href="/" scroll={false}>トップ</Link></li>
+                    <li className={styles.link + ' c-header-link bk'}><Link href="/service" scroll={false}>サービス内容</Link></li>
+                    <li className={styles.link + ' c-header-link bk'}><Link href="/about" scroll={false}>私たちについて</Link></li>
+                    <li className={styles.link + ' c-header-link bk'}><Link href="/recruit" scroll={false}>採用情報</Link></li>
                     <li className={styles.contact + ' c-header-link wh'}>
                         <Link href="tel:03-5697-9333" className={styles.contactText}>
                             <span>お問い合わせ</span>

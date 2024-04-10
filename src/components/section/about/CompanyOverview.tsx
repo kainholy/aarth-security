@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/section/about/CompanyOverview.module.scss'
+import styles from '@/styles/section/about/CompanyInfo.module.scss'
 
 const data = [
     {
@@ -28,13 +28,13 @@ const data = [
     },
 ]
 
-function CompanyOverview() {
+function CompanyInfo() {
   return (
-    <section className={styles.companyOverview} id='company-overview'>
+    <section className={styles.companyInfo} id='company-info'>
         <div className={styles.container}>
             <div className={styles.titleArea}>
                 <h2 className={styles.title+' c-title3-bold'}>
-                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Company Overview</span>
+                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Company Info</span>
                     <span className={styles.titleJa+' c-title3-bold-ja bk'}>会社概要</span>
                 </h2>
             </div>
@@ -43,14 +43,14 @@ function CompanyOverview() {
                     {
                         data.map((item, index) => (
                             <tr key={index} className={styles.tr}>
-                                <th className={styles.th + ' c-about-company-overview-title'}>{item.title}</th>
-                                <td className={styles.td + ' c-about-company-overview-text'}>{item.text}</td>
+                                <th className={styles.th + ' c-about-company-info-title'}>{item.title}</th>
+                                <td className={styles.td + ' c-about-company-info-text'}>{item.text}</td>
                             </tr>
                         ))
                     }
                     <tr className={styles.tr}>
-                        <th className={styles.th + ' c-about-company-overview-title'}>グループ事業</th>
-                        <td className={styles.td + ' c-about-company-overview-text'}>
+                        <th className={styles.th + ' c-about-company-info-title'}>グループ事業</th>
+                        <td className={styles.td + ' c-about-company-info-text'}>
                             <p className={styles.name}>株式会社アール・ウェイブ</p>
                             <p className={styles.department}>洗車・コーティング部門</p>
                             <p className={styles.department}>モーターサイクル部門</p>
@@ -63,8 +63,8 @@ function CompanyOverview() {
                         </td>
                     </tr>
                     <tr className={styles.tr}>
-                        <th className={styles.th + ' c-about-company-overview-title'}>警備事業内容</th>
-                        <td className={styles.td + ' c-about-company-overview-text'}>
+                        <th className={styles.th + ' c-about-company-info-title'}>警備事業内容</th>
+                        <td className={styles.td + ' c-about-company-info-text'}>
                             <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
                             <p className={styles.caption}>※詳細は「サービス内容」ページをご覧ください。</p>
                         </td>
@@ -76,4 +76,4 @@ function CompanyOverview() {
   )
 }
 
-export default CompanyOverview
+export default CompanyInfo

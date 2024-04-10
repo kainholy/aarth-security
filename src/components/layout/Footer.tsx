@@ -9,7 +9,7 @@ function Footer() {
         <div className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.main}>
-                    <Link href='/' className={styles.logoLink}>
+                    <Link href='/' className={styles.logoLink} scroll={false}>
                         <div className={styles.logoArea}>
                             <Image
                                 src="/footer/logo.png"
@@ -27,10 +27,10 @@ function Footer() {
                     </div>
                 </div>
                 <ul className={styles.list}>
-                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/">トップ</Link></li>
-                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/service">サービス内容</Link></li>
-                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/about">私たちについて</Link></li>
-                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/recruit">採用情報</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/" scroll={false}>トップ</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/service" scroll={false}>サービス内容</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/about" scroll={false}>私たちについて</Link></li>
+                    <li className={styles.item}><Link className={styles.link+' c-footer-link bk'} href="/recruit" scroll={false}>採用情報</Link></li>
                 </ul>
             </div>
             <p className={styles.copy+' c-footer-copy gr'}>©2023 Aarth Security Co., Ltd.</p>

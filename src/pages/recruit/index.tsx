@@ -9,6 +9,7 @@ import WeReLookingFor from '@/components/section/recruit/WeReLookingFor'
 import OurLogo from '@/components/section/common/OurLogo'
 import Header from '@/components/layout/Header'
 import { motion } from 'framer-motion'
+import RecruitInfo from '@/components/section/recruit/RecruitInfo'
 
 function Recruit() {
   return (
@@ -24,7 +25,7 @@ function Recruit() {
           className='box'
           initial={{ clipPath: "inset(0 0% 0 0%)" }} // 初期状態
           animate={{ clipPath: 'inset(0 0 0 100%)' }} // マウント時
-          transition={{ delay:.5, duration: .4, ease: 'easeInOut' }} // アニメーションの設定
+          transition={{ duration: .6, ease: 'easeInOut' }} // アニメーションの設定
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
           onAnimationStart={() => document.body.style.overflow = 'hidden'}
           onAnimationComplete={() => document.body.style.overflow = 'auto'}
@@ -34,6 +35,7 @@ function Recruit() {
                 <DetailMv en='Recruit' ja='採用情報' />
                 <WeReLookingFor />
                 <OurLogo />
+                <RecruitInfo />
                 <Contact />
                 <Access />
                 <Footer />

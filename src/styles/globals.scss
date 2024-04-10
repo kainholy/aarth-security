@@ -30,7 +30,7 @@ body {
     height: 100%;
     background: $indigo;
     z-index: 5000;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -246,7 +246,8 @@ body {
         font-size: clamp(1.8rem, calc(18 / 375 * 100vw), 1.8rem);
     }
 }
-.c-about-company-overview-title {
+.c-about-company-info-title,
+.c-about-recruit-info-title {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(1.4rem, calc(28 / 1440 * 100vw), 1.8rem);
@@ -254,7 +255,8 @@ body {
         font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
     }
 }
-.c-about-company-overview-text {
+.c-about-company-info-text,
+.c-about-recruit-info-text {
     font-family: $noto;
     font-weight: $regular;
     font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
