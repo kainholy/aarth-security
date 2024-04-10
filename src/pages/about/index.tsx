@@ -12,6 +12,7 @@ import React from 'react'
 import styles from '@/styles/pages/About.module.scss'
 import Header from '@/components/layout/Header'
 import CompanyOverview from '@/components/section/about/CompanyOverview'
+import { motion } from 'framer-motion'
 
 function About() {
   return (
@@ -23,6 +24,13 @@ function About() {
         </Head>
 
         <Header />
+        <motion.div
+          className='box'
+          initial={{ clipPath: "inset(0 0% 0 0%)" }} // 初期状態
+          animate={{ clipPath: 'inset(0 0 0 100%)' }} // マウント時
+          transition={{ delay:.5, duration: .4, ease: 'easeInOut' }} // アニメーションの設定
+          exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
+        ></motion.div>
         <div className={styles.container}>
             <main>
                 <DetailMv en='About Us' ja='私たちについて' />

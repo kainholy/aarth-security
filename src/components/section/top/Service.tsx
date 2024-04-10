@@ -136,7 +136,7 @@ function Service() {
         </div>
 
         <div className={styles.btnArea}>
-            <Link href="/service" className={styles.btn+" c-btn"}>
+            <Link href="/service" className={styles.btn+" c-btn"} scroll={false}>
                 <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
                 <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
             </Link>

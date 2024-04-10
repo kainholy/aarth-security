@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import { Html, Head, Main, NextScript } from "next/document";
+import { motion } from 'framer-motion'
 
 export default function Document() {
   return (

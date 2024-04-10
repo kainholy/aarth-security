@@ -8,6 +8,7 @@ import Footer from '@/components/layout/Footer'
 import WeReLookingFor from '@/components/section/recruit/WeReLookingFor'
 import OurLogo from '@/components/section/common/OurLogo'
 import Header from '@/components/layout/Header'
+import { motion } from 'framer-motion'
 
 function Recruit() {
   return (
@@ -19,6 +20,13 @@ function Recruit() {
         </Head>
 
         <Header />
+        <motion.div
+          className='box'
+          initial={{ clipPath: "inset(0 0% 0 0%)" }} // 初期状態
+          animate={{ clipPath: 'inset(0 0 0 100%)' }} // マウント時
+          transition={{ delay:.5, duration: .4, ease: 'easeInOut' }} // アニメーションの設定
+          exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
+        ></motion.div>
         <div className={styles.container}>
             <main>
                 <DetailMv en='Recruit' ja='採用情報' />

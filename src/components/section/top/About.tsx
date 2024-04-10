@@ -85,7 +85,7 @@ function About() {
                         人とのつながりを大切にし、<br />
                         より安全で笑顔あふれる未来を築きます。
                     </p>
-                    <Link className={styles.btn + ' c-btn'} href="/about" ref={fadeUp2Ref}>
+                    <Link className={styles.btn + ' c-btn'} href="/about" ref={fadeUp2Ref} scroll={false}>
                         <span className={styles.btn__text+' c-btn-text wh'}>私たちについて</span>
                         <span className={styles.arrow+' c-btn-arrow wh'}>→</span>
                     </Link>

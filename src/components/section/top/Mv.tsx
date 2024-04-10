@@ -27,7 +27,7 @@ function Mv() {
             clipPath: "inset(0 0% 0 0)",
             duration: .7,
             ease: 'power3.in'
-        })
+        }, '+=1')
         .fromTo([bgSpan, bgSpan2], { clipPath: "inset(0 0 0 0%)" }, {
             clipPath: "inset(0 0 0 100%)",
             duration: .8,
@@ -66,7 +66,7 @@ function Mv() {
 
           <div className={styles.main}>
             <div className={styles.bannerArea}>
-              <Link className={styles.banner} href="/recruit">
+              <Link className={styles.banner} href="/recruit" scroll={false}>
                 <span className={styles.btn__text+' c-btn-text wh'}>仲間募集中！採用情報をcheck</span>
                 <span className={styles.arrow+' c-btn-arrow wh'}>→</span>
               </Link>

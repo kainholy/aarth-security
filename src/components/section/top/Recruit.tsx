@@ -86,7 +86,7 @@ function Recruit() {
                         警備業は人が財産です。<br />
                         共に切磋琢磨できる新たな仲間を歓迎します。
                     </p>
-                    <Link href="/recruit" className={styles.btn+" c-btn"} ref={fadeUpButtonRef}>
+                    <Link href="/recruit" className={styles.btn+" c-btn"} ref={fadeUpButtonRef} scroll={false}>
                         <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
                         <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
                     </Link>
