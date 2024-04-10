@@ -46,7 +46,7 @@ function Mv() {
             clipPath: "inset(0 0% 0 0)",
             duration: .4,
             ease: 'power3.in'
-        })
+        }, '+=.5')
         .fromTo([bgSpan, bgSpan2], { clipPath: "inset(0 0 0 0%)" }, {
             clipPath: "inset(0 0 0 100%)",
             duration: .5,
