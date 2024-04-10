@@ -26,6 +26,8 @@ function Recruit() {
           animate={{ clipPath: 'inset(0 0 0 100%)' }} // マウント時
           transition={{ delay:.5, duration: .4, ease: 'easeInOut' }} // アニメーションの設定
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
+          onAnimationStart={() => document.body.style.overflow = 'hidden'}
+          onAnimationComplete={() => document.body.style.overflow = 'auto'}
         ></motion.div>
         <div className={styles.container}>
             <main>
