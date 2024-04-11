@@ -20,7 +20,7 @@ function Header() {
                 <div className={styles.company}>
                     <Link className={styles.logoArea} href='/' scroll={false}>
                         <Image
-                            src="/top/mv/logo.png"
+                            src="/top/mv/logo.webp"
                             alt="Aarth Security Logo"
                             className={styles.logo}
                             width={300}

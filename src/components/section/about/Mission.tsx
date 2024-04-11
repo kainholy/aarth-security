@@ -23,7 +23,7 @@ function Mission() {
         </div>
         <div className={styles.imgArea}>
           <Image
-            src='/about/mission/1.png'
+            src='/about/mission/1.webp'
             alt='堂々たる技術、誠実なサービス'
             className={styles.img}
             width={1000}

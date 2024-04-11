@@ -22,10 +22,19 @@ function Mv() {
       const bgSpan2 = bgSpan2Ref.current;
       const scrollArea = scrollAreaRef.current;
       const scrollArrow = scrollArrowRef.current;
+      const scrollArrow2 = scrollArrow2Ref.current;
       const mm = gsap.matchMedia()
       const tl = gsap.timeline();
+      const tl2 = gsap.timeline();
       mm.add(`(min-width: 769px)`, () => {
-        gsap.fromTo(scrollArrow, {y: -50}, { delay: 1, y: 50, duration: 2, ease: 'power1.inOut', repeat: -1, repeatDelay: .5})
+        gsap.fromTo([scrollArrow, scrollArrow2], { y: -48.3 }, {
+            delay: 1,
+            y: 15,
+            duration: 2.5,
+            repeat: -1,
+            repeatDelay: 2,
+            ease: 'power3.inOut'
+        })
         tl
         .fromTo([text, text2], { clipPath: "inset(0 100% 0 0)" }, {
             clipPath: "inset(0 0% 0 0)",
@@ -37,10 +46,10 @@ function Mv() {
             duration: .8,
             ease: 'power3.out'
         }, '+=0.1')
-        .fromTo(scrollArea, { autoAlpha: 0, y: 10 }, {
+        .fromTo(scrollArea, { autoAlpha: 0, y: 7 }, {
             autoAlpha: 1,
             y: 0,
-            duration: .3,
+            duration: .4,
             ease: 'power1.out'
         }, '-=.2')
       });
@@ -87,18 +96,19 @@ function Mv() {
           <div className={styles.circle}>
               <div className={styles.scrollArrowArea}>
                 <p className={styles.scrollArrow + ' js-scroll-arrow'} ref={scrollArrowRef}>↓</p>
+                <p className={styles.scrollArrow + ' js-scroll-arrow'} ref={scrollArrow2Ref}>↓</p>
               </div>
           </div>
         </div>
         <Image
-          src="/top/mv/thumb.png"
+          src="/top/mv/thumb.webp"
           alt="堂々たる技術、誠実なサービス"
           className={styles.thumbnail + ' pc'}
           width={4000}
           height={2000}
         />
         <Image
-          src="/top/mv/thumb_sp.png"
+          src="/top/mv/thumb_sp.webp"
           alt="堂々たる技術、誠実なサービス"
           className={styles.thumbnail + ' sp'}
           width={4000}

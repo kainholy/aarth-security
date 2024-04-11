@@ -4,12 +4,12 @@
 .contact {
     width: 100%;
     height: auto;
-    background: url('/common/contact/bg.png');
+    background: url('/common/contact/bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @include sp {
-        background: url('/common/contact/bg_sp.png');
+        background: url('/common/contact/bg_sp.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

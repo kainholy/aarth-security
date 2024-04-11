@@ -12,7 +12,7 @@ function Footer() {
                     <Link href='/' className={styles.logoLink} scroll={false}>
                         <div className={styles.logoArea}>
                             <Image
-                                src="/footer/logo.png"
+                                src="/footer/logo.webp"
                                 alt="Aarth Security"
                                 className={styles.logo}
                                 width={500}
@@ -37,14 +37,14 @@ function Footer() {
         </div>
         <div className={styles.imgArea}>
             <Image
-                src="/footer/1.png"
+                src="/footer/1.webp"
                 alt="Aarth Security"
                 className={styles.img + ' pc'}
                 width={3000}
                 height={2000}
             />
             <Image
-                src="/footer/1_sp.png"
+                src="/footer/1_sp.webp"
                 alt="Aarth Security"
                 className={styles.img + ' sp'}
                 width={1000}

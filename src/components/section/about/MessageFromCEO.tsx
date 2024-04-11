@@ -15,7 +15,7 @@ function MessageFromCEO() {
             <div className={styles.content}>
                 <div className={styles.imgArea}>
                     <Image
-                        src='/about/message-from-CEO/1.png'
+                        src='/about/message-from-CEO/1.webp'
                         alt='堂々たる技術、誠実なサービス'
                         className={styles.img}
                         width={1000}

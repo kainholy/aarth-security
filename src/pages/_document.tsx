@@ -6,7 +6,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Adobe Fonts (Typekit) を読み込む */}
         <script src="https://use.typekit.net/nii5fcl.js" async></script>
         <script dangerouslySetInnerHTML={{
           __html: `
@@ -31,6 +30,12 @@ export default function Document() {
             })();
           `
         }} />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        {/* <meta property="og:image" content="https://www.albion-cosmetics.com/seasonal/flarune/assets/images/ogp.png"/>
+        <meta property="og:image:secure_url" content="https://www.albion-cosmetics.com/seasonal/flarune/assets/images/ogp.png"/> */}
+        <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml"/>
+        <link rel="apple-touch-icon" href="/favicon.png"/>
+        <link rel="icon" href="/favicon.png"/>
       </Head>
       <body>
         <Main />

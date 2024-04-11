@@ -26,7 +26,7 @@ function OurLogo() {
                 </div>
                 <div className={styles.content__imgArea}>
                     <Image
-                        src='/about/our-logo/logo.png'
+                        src='/about/our-logo/logo.webp'
                         alt='ロゴマーク'
                         className={styles.content__img}
                         width={1000}

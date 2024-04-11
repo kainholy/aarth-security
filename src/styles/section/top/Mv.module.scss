@@ -93,14 +93,15 @@
 .scrollArrowArea {
     display: block;
     width: fit-content;
-    height: fit-content;
+    height: 5rem;
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 .scrollArrow {
     display: block;
     font-size: 2rem;
-    height: 5rem;
 }
 .thumbnail {
     width: 100%;

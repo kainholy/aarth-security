@@ -17,7 +17,7 @@ function OurUniform() {
         </div>
         <div className={styles.imgArea}>
           <Image
-            src='/about/our-uniform/1.png'
+            src='/about/our-uniform/1.webp'
             alt='堂々たる技術、誠実なサービス'
             className={styles.img}
             width={1000}

@@ -18,7 +18,7 @@ function Service() {
         {
             ref: item1Ref,
             number: '01',
-            img: '/top/service/1.png',
+            img: '/top/service/1.webp',
             alt: '雑踏(イベント)警備',
             title: '雑踏(イベント)警備',
             text: 'イベントなどで人が集まる場所において、事故や混乱を防止し、安全な環境を確保します。計画策定から実施まで、お任せください。'
@@ -26,7 +26,7 @@ function Service() {
         {
             ref: item2Ref,
             number: '02',
-            img: '/top/service/2.png',
+            img: '/top/service/2.webp',
             alt: '交通誘導警備',
             title: '交通誘導警備',
             text: '交通量の多い場所や工事現場において、的確な誘導を行い、事故の発生を防止します。主に建築現場や土木工事などで交通誘導を行います。'
@@ -34,7 +34,7 @@ function Service() {
         {
             ref: item3Ref,
             number: '03',
-            img: '/top/service/3.png',
+            img: '/top/service/3.webp',
             alt: '駐車場警備',
             title: '駐車場警備',
             text: '安全でスムーズな車両の出入りを確保し駐車場内外のトラブルや事故、犯罪の発生を防止します。最新の技術と熟練の警備員を駆使し、あらゆる駐車場のニーズに対応しております。'

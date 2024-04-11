@@ -17,7 +17,7 @@ function WeReLookingFor() {
             </div>
             <div className={styles.imgArea}>
                 <Image
-                    src='/recruit/we-re-looking-for/1.png'
+                    src='/recruit/we-re-looking-for/1.webp'
                     alt='堂々たる技術、誠実なサービス'
                     className={styles.img}
                     width={1000}
