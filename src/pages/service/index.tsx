@@ -39,8 +39,6 @@ function Service() {
           animate={{ clipPath: 'inset(0 0 0 100%)' }} // マウント時
           transition={{ duration: .6, ease: 'easeInOut' }} // アニメーションの設定
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
-          onAnimationStart={() => document.body.style.overflow = 'hidden'}
-          onAnimationComplete={() => document.body.style.overflow = 'auto'}
         ></motion.div>
         <div className={styles.container}>
             <main>
