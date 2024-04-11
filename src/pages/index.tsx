@@ -1,3 +1,4 @@
+'use client'
 import Head from "next/head";
 import styles from "@/styles/pages/Top.module.scss";
 import Mv from "@/components/section/top/Mv";

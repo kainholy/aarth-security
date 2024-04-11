@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from '@/styles/pages/Recruit.module.scss'
 import Head from 'next/head'
