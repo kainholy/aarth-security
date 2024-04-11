@@ -32,7 +32,7 @@ function Mv() {
             y: 15,
             duration: 2.5,
             repeat: -1,
-            repeatDelay: 2,
+            repeatDelay: .5,
             ease: 'power3.inOut'
         })
         tl
