@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from '@/styles/section/recruit/WeReLookingFor.module.scss'
 import Image from 'next/image'

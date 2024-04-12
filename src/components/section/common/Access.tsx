@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef } from 'react'
 import styles from '@/styles/section/common/Access.module.scss'
 import gsap from "gsap";

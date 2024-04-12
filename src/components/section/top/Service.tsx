@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef } from 'react'
 import styles from '@/styles/section/top/Service.module.scss'
 import Image from 'next/image'
