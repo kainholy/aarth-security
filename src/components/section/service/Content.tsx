@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import styles from '@/styles/section/service/Content.module.scss'
 import Image from 'next/image'

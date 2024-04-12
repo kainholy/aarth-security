@@ -1,5 +1,3 @@
-'use client'
-'use client'
 import React, { useState } from 'react'
 import styles from '@/styles/element/HeaderButton.module.scss'
 

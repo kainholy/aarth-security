@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useRef } from 'react'
 import styles from '@/styles/section/top/Recruit.module.scss'
 import Link from 'next/link'

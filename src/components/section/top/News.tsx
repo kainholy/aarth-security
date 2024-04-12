@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useRef } from 'react'
 import styles from '@/styles/section/top/News.module.scss'
 import gsap from "gsap";

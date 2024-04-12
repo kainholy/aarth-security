@@ -1,4 +1,3 @@
-'use client'
 import DetailMv from '@/components/element/DetailMv'
 import Footer from '@/components/layout/Footer'
 import MessageFromCEO from '@/components/section/about/MessageFromCEO'
