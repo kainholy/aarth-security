@@ -39,7 +39,7 @@ function Service() {
           transition={{ duration: .6, ease: 'easeInOut' }} // アニメーションの設定
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
         ></motion.div>
-        <div className={styles.container}>
+        <div className={'container'}>
             <main>
                 <DetailMv en='Service' ja='サービス内容' />
                 <Tab currentTab={currentTab} setCurrentTab={setCurrentTab} />
