@@ -21,21 +21,21 @@ const data = [
 
 function Philosophy() {
   return (
-    <section id='philosophy' className={styles.philosophy}>
-        <div className={styles.container}>
-            <div className={styles.titleArea}>
-                <h2 className={styles.title+' c-title3-bold'}>
-                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Philosophy</span>
-                    <span className={styles.titleJa+' c-title3-bold-ja bk'}>経営理念</span>
+    <section id='philosophy' className={'p-about-philosophy__philosophy'}>
+        <div className={'p-about-philosophy__container'}>
+            <div className={'p-about-philosophy__titleArea'}>
+                <h2 className={'p-about-philosophy__title c-title3-bold'}>
+                    <span className={'p-about-philosophy__titleEn c-title3-bold-en blue'}>Philosophy</span>
+                    <span className={'p-about-philosophy__titleJa c-title3-bold-ja bk'}>経営理念</span>
                 </h2>
             </div>
-            <div className={styles.content}>
+            <div className={'p-about-philosophy__content'}>
                 {
                     data.map((item, index) => (
-                        <div key={index} className={styles.item}>
-                            <p className={styles.item__number+' c-about-philosophy-number blue'}>{item.number}</p>
-                            <h3 className={styles.item__title+' c-about-philosophy-title bk'}>{item.title}</h3>
-                            <p className={styles.item__text+' c-body1 gr'}>{item.text}</p>
+                        <div key={index} className={'p-about-philosophy__item'}>
+                            <p className={'p-about-philosophy__item__number c-about-philosophy-number blue'}>{item.number}</p>
+                            <h3 className={'p-about-philosophy__item__title c-about-philosophy-title bk'}>{item.title}</h3>
+                            <p className={'p-about-philosophy__item__text c-body1 gr'}>{item.text}</p>
                         </div>
                     ))
                 }

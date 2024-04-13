@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import styles from '@/styles/element/HeaderButton.module.scss'
 
 function HeaderButton({ open, onClick }: { open: boolean, onClick: () => void}){
 
   return (
-    <button className={styles.headerButton + ' sp'} onClick={onClick} aria-expanded={open}>
-        <span className={styles.line1}></span>
-        <span className={styles.line2}></span>
+    <button className={'p-element-header-button__headerButton sp'} onClick={onClick} aria-expanded={open}>
+        <span className={'p-element-header-button__line1'}></span>
+        <span className={'p-element-header-button__line2'}></span>
     </button>
   )
 }

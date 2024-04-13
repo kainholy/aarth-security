@@ -13,10 +13,23 @@
 @import './section/service/Content.scss';
 @import './section/service/Tab.scss';
 
+@import './section/about/CompanyInfo.scss';
+@import './section/about/MessageFromCEO.scss';
+@import './section/about/Mission.scss';
+@import './section/about/OurUniform.scss';
+@import './section/about/Philosophy.scss';
+
 
 @import './section/recruit/WeReLookingFor.scss';
 @import './section/recruit/RecruitInfo.scss';
 
+
+@import './element/DetailMv.scss';
+@import './element/HeaderButton.scss';
+@import './element/HeaderNav.scss';
+
+@import './layout/Header.scss';
+@import './layout/Footer.scss';
 
 @import './section/common/Access.scss';
 @import './section/common/Contact.scss';

@@ -1,0 +1,45 @@
+@import "../../foundation/mixin.scss";
+
+.p-about-our-uniform {
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-top: 12rem;
+        padding-left: min(calc(190 / 1440 * 100%), 19rem);
+        padding-right: min(calc(260 / 1440 * 100%), 26rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include sp {
+            padding-top: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+    &__textArea {
+        width: calc(510 / 990 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__text {
+        margin-top: 2.4rem;
+        @include sp {
+            margin-top: 1.2rem;
+        }
+    }
+    &__imgArea {
+        width: calc(330 / 990 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

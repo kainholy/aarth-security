@@ -1,0 +1,55 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
+
+.p-about-philosophy {
+    &__container {
+        padding-top:12rem;
+        padding-bottom: 12rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-left: min(calc(190 / 1440 * 100%), 19rem);
+        padding-right: min(calc(190 / 1440 * 100%), 19rem);
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            padding-top: 6.4rem;
+            padding-bottom: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+    &__content {
+        width: calc(620 / 1060 * 100%);
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__item + &__item {
+        border-top: 1px solid $black;
+    }
+    &__item {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        @include sp {
+            padding-top: 2.4rem;
+            padding-bottom: 2.4rem;
+        }
+        &__title {
+            margin-top: .8rem;
+            @include sp {
+                margin-top: .4rem;
+            }
+        }
+        &__text {
+            margin-top: 2.4rem;
+            @include sp {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import "../foundation/color.scss";
+@import "../foundation/mixin.scss";
+
+.l-header {
+    &__header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    &__container {
+        max-width: 144rem;
+        margin: 0 auto;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        padding-left: min(calc(50 / 1440 * 100vw), 5rem);
+        padding-right: min(calc(50 / 1440 * 100vw), 5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include sp {
+            padding-top: 1.6rem;
+            padding-bottom: 1.6rem;
+            padding-left: min(calc(20 / 375 * 100vw), 2rem);
+            padding-right: min(calc(20 / 375 * 100vw), 2rem);
+        }
+    }
+    &__company {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        @include sp {
+            gap: 1.2rem;
+        }
+    }
+    &__logoArea {
+        width: 7.4rem;
+        height: 8.3rem;
+        @include sp {
+            width: 4.7rem;
+            height: 5.2rem;
+        }
+    }
+    &__logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__textArea {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        @include sp {
+            gap: .8rem;
+        }
+    }
+    &__span {
+        content: "";
+        display: block;
+        width: 0.1rem;
+        height: 2rem;
+        background-color: $indigo;
+        @include sp {
+            height: 1.3rem;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: min(3.2rem, calc(32 / 1440 * 100vw));
+    }
+    &__contactText {
+        background: $indigo;
+        padding: 1rem 1.6rem;
+        display: inline-flex;
+        align-items: center;
+        gap: .8rem;
+    }
+}

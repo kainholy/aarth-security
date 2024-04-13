@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '@/styles/section/recruit/RecruitInfo.module.scss'
 import Link from 'next/link'
 
 const data = [

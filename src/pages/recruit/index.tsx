@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '@/styles/pages/Recruit.module.scss'
 import Head from 'next/head'
 import DetailMv from '@/components/element/DetailMv'
 import Contact from '@/components/section/common/Contact'
@@ -40,7 +39,7 @@ function Recruit() {
           transition={{ duration: .6, ease: 'easeInOut' }} // アニメーションの設定
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
         ></motion.div>
-        <div className={styles.container}>
+        <div className={'container'}>
             <main>
                 <DetailMv en='Recruit' ja='採用情報' />
                 <WeReLookingFor />

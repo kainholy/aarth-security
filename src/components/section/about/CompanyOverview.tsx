@@ -30,43 +30,43 @@ const data = [
 
 function CompanyInfo() {
   return (
-    <section className={styles.companyInfo} id='company-info'>
-        <div className={styles.container}>
-            <div className={styles.titleArea}>
-                <h2 className={styles.title+' c-title3-bold'}>
-                    <span className={styles.titleEn+' c-title3-bold-en blue'}>Company Info</span>
-                    <span className={styles.titleJa+' c-title3-bold-ja bk'}>会社概要</span>
+    <section className={'p-about-company__companyInfo'} id='company-info'>
+        <div className={'p-about-company__container'}>
+            <div className={'p-about-company__titleArea'}>
+                <h2 className={'p-about-company__title c-title3-bold'}>
+                    <span className={'p-about-company__titleEn c-title3-bold-en blue'}>Company Info</span>
+                    <span className={'p-about-company__titleJa c-title3-bold-ja bk'}>会社概要</span>
                 </h2>
             </div>
-            <div className={styles.content}>
-                <table className={styles.table}>
+            <div className={'p-about-company__content'}>
+                <table className={'p-about-company__table'}>
                     {
                         data.map((item, index) => (
-                            <tr key={index} className={styles.tr}>
-                                <th className={styles.th + ' c-about-company-info-title'}>{item.title}</th>
-                                <td className={styles.td + ' c-about-company-info-text'}>{item.text}</td>
+                            <tr key={index} className={'p-about-company__tr'}>
+                                <th className={'p-about-company__th c-about-company-info-title'}>{item.title}</th>
+                                <td className={'p-about-company__td c-about-company-info-text'}>{item.text}</td>
                             </tr>
                         ))
                     }
-                    <tr className={styles.tr}>
-                        <th className={styles.th + ' c-about-company-info-title'}>グループ事業</th>
-                        <td className={styles.td + ' c-about-company-info-text'}>
-                            <p className={styles.name}>株式会社アール・ウェイブ</p>
-                            <p className={styles.department}>洗車・コーティング部門</p>
-                            <p className={styles.department}>モーターサイクル部門</p>
-                            <p className={styles.department}>警備部門</p>
-                            <p className={styles.department}>飲食店部門</p>
-                            <p className={styles.name}>ウィンズ株式会社</p>
-                            <p className={styles.department}>車両部門</p>
-                            <p className={styles.name}>株式会社アース</p>
-                            <p className={styles.department}>不動産部門</p>
+                    <tr className={'p-about-company__tr'}>
+                        <th className={'p-about-company__th c-about-company-info-title'}>グループ事業</th>
+                        <td className={'p-about-company__td c-about-company-info-text'}>
+                            <p className={'p-about-company__name'}>株式会社アール・ウェイブ</p>
+                            <p className={'p-about-company__department'}>洗車・コーティング部門</p>
+                            <p className={'p-about-company__department'}>モーターサイクル部門</p>
+                            <p className={'p-about-company__department'}>警備部門</p>
+                            <p className={'p-about-company__department'}>飲食店部門</p>
+                            <p className={'p-about-company__name'}>ウィンズ株式会社</p>
+                            <p className={'p-about-company__department'}>車両部門</p>
+                            <p className={'p-about-company__name'}>株式会社アース</p>
+                            <p className={'p-about-company__department'}>不動産部門</p>
                         </td>
                     </tr>
-                    <tr className={styles.tr}>
-                        <th className={styles.th + ' c-about-company-info-title'}>警備事業内容</th>
-                        <td className={styles.td + ' c-about-company-info-text'}>
+                    <tr className={'p-about-company__tr'}>
+                        <th className={'p-about-company__th c-about-company-info-title'}>警備事業内容</th>
+                        <td className={'p-about-company__td c-about-company-info-text'}>
                             <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
-                            <p className={styles.caption}>※詳細は「サービス内容」ページをご覧ください。</p>
+                            <p className={'p-about-company__caption'}>※詳細は「サービス内容」ページをご覧ください。</p>
                         </td>
                     </tr>
                 </table>

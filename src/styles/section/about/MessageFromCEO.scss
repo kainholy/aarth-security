@@ -1,0 +1,70 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
+
+.p-about-messageFromCEO {
+    &__messageFromCEO {
+        background: $bg-gray;
+    }
+    &__container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-left: min(calc(80 / 1440 * 100%), 8rem);
+        padding-right: min(calc(80 / 1440 * 100%), 8rem);
+        @include sp {
+            padding-top: 6.4rem;
+            padding-bottom: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+    }
+    &__content {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__imgArea {
+        width: calc(510 / 1280 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__inner {
+        width: calc(730 / 1280 * 100%);
+        display: flex;
+        justify-content: center;
+        @include sp {
+            width: 100%;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+    }
+    &__textArea {
+        width: calc(510 / 730 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__text {
+        margin-top: 2.4rem;
+        @include sp {
+            margin-top: 1.2rem;
+        }
+    }
+}

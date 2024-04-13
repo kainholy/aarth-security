@@ -1,0 +1,52 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
+
+.p-about-mission {
+    &__mission {
+        border-bottom: 1px solid $black;
+    }
+    &__container {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-left: min(calc(80 / 1440 * 100%), 8rem);
+        padding-right: min(calc(80 / 1440 * 100%), 8rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include sp {
+            padding-top: 6.4rem;
+            padding-bottom: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+    &__inner {
+        width: calc(622 / 1440 * 100%);
+        display: flex;
+        justify-content: center;
+        @include sp {
+            width: 100%;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+    }
+    &__text {
+        margin-top: 1.6rem;
+    }
+    &__imgArea {
+        width: calc(660 / 1440 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

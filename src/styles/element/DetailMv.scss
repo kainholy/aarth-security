@@ -1,0 +1,23 @@
+@import "../foundation/color.scss";
+@import "../foundation/mixin.scss";
+
+.p-element-detail-mv {
+    &__detailMv {
+        border-bottom: 1px solid $gray;
+    }
+    &__container {
+        margin-top: 22.6rem;
+        margin-bottom: 8rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-left: min(calc(80 / 1440 * 100%), 8rem);
+        padding-right: min(calc(80 / 1440 * 100%), 8rem);
+        @include sp {
+            margin-top: 14.4rem;
+            margin-bottom: 4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+        }
+    }
+}

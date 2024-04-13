@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/pages/Top.module.scss";
 import Mv from "@/components/section/top/Mv";
 import About from "@/components/section/top/About";
 import Service from "@/components/section/top/Service";
@@ -40,7 +39,7 @@ export default function Home() {
           exit={{ clipPath: "inset(0 0% 0 0%)" }}    // アンマウント時
         ></motion.div>
         <Header />
-        <div className={styles.container}>
+        <div className={'container'}>
           <main>
             <Mv />
             <About />
