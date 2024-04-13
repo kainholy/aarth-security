@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import styles from '@/styles/section/top/News.module.scss'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -20,27 +19,27 @@ function News() {
         });
     })
   return (
-    <section id='news' className={styles.news}>
-        <div className={styles.container}>
-            <div className={styles.bg} ref={fadeUpRef}>
-                <div className={styles.titleArea}>
-                    <h2 className={styles.title+' c-title2'}>
-                        <span className={styles.titleEn+' c-title2-en wh'}>News</span>
-                        <span className={styles.titleJa+' c-title2-ja wh'}>お知らせ</span>
+    <section id='news' className={'p-top-news__news'}>
+        <div className={'p-top-news__container'}>
+            <div className={'p-top-news__bg'} ref={fadeUpRef}>
+                <div className={'p-top-news__titleArea'}>
+                    <h2 className={'p-top-news__title c-title2'}>
+                        <span className={'p-top-news__titleEn c-title2-en wh'}>News</span>
+                        <span className={'p-top-news__titleJa c-title2-ja wh'}>お知らせ</span>
                     </h2>
                 </div>
-                <div className={styles.contents}>
-                    <div className={styles.item}>
-                        <p className={styles.item__date+' c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={styles.item__text+' c-body1 wh'}>サイトをリニューアルしました。</p>
+                <div className={'p-top-news__contents'}>
+                    <div className={'p-top-news__item'}>
+                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
+                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
                     </div>
-                    <div className={styles.item}>
-                        <p className={styles.item__date+' c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={styles.item__text+' c-body1 wh'}>サイトをリニューアルしました。</p>
+                    <div className={'p-top-news__item'}>
+                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
+                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
                     </div>
-                    <div className={styles.item}>
-                        <p className={styles.item__date+' c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={styles.item__text+' c-body1 wh'}>サイトをリニューアルしました。</p>
+                    <div className={'p-top-news__item'}>
+                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
+                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
                     </div>
                 </div>
             </div>

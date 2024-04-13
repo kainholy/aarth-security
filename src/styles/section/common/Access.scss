@@ -1,0 +1,66 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/mixin.scss";
+
+.p-common-access {
+    &__container {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        max-width: 144rem;
+        margin: 0 auto;
+        padding-left: min(5.5vw, 8rem);
+        padding-right: min(5.5vw, 8rem);
+        @include sp {
+            padding-top: 6.4rem;
+            padding-bottom: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+    &__textArea {
+        width: calc(290 / 1280 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__contents {
+        margin-top: 4rem;
+        @include sp {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 3.2rem;
+        }
+    }
+    &__text {
+        width: 100%;
+    }
+    @include sp {
+        &__text:first-child {
+            border-right: 1px solid $indigo;
+        }
+    }
+    
+    &__mapArea {
+        width: calc(950 / 1280 * 100%);
+        @include sp {
+            width: 100%;
+        }
+    }
+    &__map {
+        width: 100%;
+        @include pc {
+            aspect-ratio: 950 / 456;
+        }
+        @include sp {
+            height: 45.6rem;
+        }
+    }
+}

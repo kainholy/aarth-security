@@ -21,22 +21,22 @@ const data = [
 function Content({ currentTab }: { currentTab: number }) {
     const currentTabData = data[currentTab - 1]
     return (
-        <section id='content' className={styles.content}>
-            <div className={styles.container}>
+        <section id='content' className={'p-service-content__content'}>
+            <div className={'p-service-content__container'}>
                 {
                     currentTabData && (
                         <>
-                            <div className={styles.textArea}>
-                                <p className={styles.title+' c-service-content-title'}>{currentTabData.title}</p>
-                                <span className={styles.line}></span>
-                                <p className={styles.text+' c-service-content-text'}>{currentTabData.text}</p>
+                            <div className={'p-service-content__textArea'}>
+                                <p className={'p-service-content__title c-service-content-title'}>{currentTabData.title}</p>
+                                <span className={'p-service-content__line'}></span>
+                                <p className={'p-service-content__text c-service-content-text'}>{currentTabData.text}</p>
                             </div>
-                            <div className={styles.imgInner}>
-                                <div className={styles.imgArea}>
+                            <div className={'p-service-content__imgInner'}>
+                                <div className={'p-service-content__imgArea'}>
                                     <Image
                                         src={currentTabData.img}
                                         alt={currentTabData.title}
-                                        className={styles.img}
+                                        className={'p-service-content__img'}
                                         width={1000}
                                         height={1000}
                                     />

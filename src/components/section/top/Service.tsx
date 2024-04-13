@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import styles from '@/styles/section/top/Service.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import gsap from "gsap";
@@ -100,45 +99,45 @@ function Service() {
     })
 
   return (
-    <section id='service' className={styles.service}>
-      <div className={styles.container}>
-        <div className={styles.titleArea}>
-            <h2 className={styles.title+' c-title2'}>
-                <span className={styles.titleEn+' c-title2-en ind js-text-clip-anim__text'} ref={text1Ref}>
-                    <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
+    <section id='service' className={'p-top-service__service'}>
+      <div className={'p-top-service__container'}>
+        <div className={'p-top-service__titleArea'}>
+            <h2 className={'p-top-service__title c-title2'}>
+                <span className={'p-top-service__titleEn c-title2-en ind js-text-clip-anim__text'} ref={text1Ref}>
+                    <span className={'p-top-service__bgSpan js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
                     Service
                 </span>
-                <span className={styles.titleJa+' c-title2-ja ind js-text-clip-anim__text'} ref={text2Ref}>
-                    <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
+                <span className={'p-top-service__titleJa c-title2-ja ind js-text-clip-anim__text'} ref={text2Ref}>
+                    <span className={'p-top-service__bgSpan js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
                     サービス内容
                 </span>
             </h2>
         </div>
-        <div className={styles.contents}>
+        <div className={'p-top-service__contents'}>
             {data.map((item, index) => (
-                <div className={styles.item} ref={item.ref} key={index}>
-                    <div className={styles.item__imgArea}>
+                <div className={'p-top-service__item'} ref={item.ref} key={index}>
+                    <div className={'p-top-service__item__imgArea'}>
                         <Image
                             src={item.img}
                             alt={item.alt}
-                            className={styles.item__img}
+                            className={'p-top-service__item__img'}
                             width={1000}
                             height={1000}
                         />
                     </div>
-                    <div className={styles.item__textArea}>
-                        <p className={styles.item__number+' c-top-service-number ind'}>{item.number}</p>
-                        <p className={styles.item__title+' c-top-service-title bk'}>{item.title}</p>
-                        <p className={styles.item__text+' c-body1 gr'}>{item.text}</p>
+                    <div className={'p-top-service__item__textArea'}>
+                        <p className={'p-top-service__item__number c-top-service-number ind'}>{item.number}</p>
+                        <p className={'p-top-service__item__title c-top-service-title bk'}>{item.title}</p>
+                        <p className={'p-top-service__item__text c-body1 gr'}>{item.text}</p>
                     </div>
                 </div>
             ))}
         </div>
 
-        <div className={styles.btnArea}>
-            <Link href="/service" className={styles.btn+" c-btn"} scroll={false}>
-                <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
-                <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
+        <div className={'p-top-service__btnArea'}>
+            <Link href="/service" className={'p-top-service__btn c-btn'} scroll={false}>
+                <span className={'p-top-service__btn__text c-btn-text wh'}>詳しく見る</span>
+                <span className={'p-top-service__btn__arrow c-btn-text wh'}>→</span>
             </Link>
         </div>
 

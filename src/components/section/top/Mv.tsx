@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import styles from '@/styles/section/top/Mv.module.scss'
 import Link from 'next/link'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
@@ -69,48 +68,48 @@ function Mv() {
   })
 
   return (
-    <section className={styles.mv}>
-      <div className={styles.container}>
+    <section className={'p-top-mv__mv'}>
+      <div className={'p-top-mv__container'}>
 
-          <h1 className={styles.title+' c-top-mv-title ind js-text-clip-anim__text'} ref={textRef}>
-              <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
+          <h1 className={'p-top-mv__title c-top-mv-title ind js-text-clip-anim__text'} ref={textRef}>
+              <span className={'p-top-mv__bgSpan js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
               Aarth Security
           </h1>
 
-          <div className={styles.main}>
-            <div className={styles.bannerArea}>
-              <Link className={styles.banner + ' c-mv-button'} href="/recruit" scroll={false}>
-                <span className={styles.btn__text+' c-btn-text wh'}>仲間募集中！採用情報をcheck</span>
-                <span className={styles.arrow+' c-btn-arrow wh'}>→</span>
+          <div className={'p-top-mv__main'}>
+            <div className={'p-top-mv__bannerArea'}>
+              <Link className={'p-top-mv__banner c-mv-button'} href="/recruit" scroll={false}>
+                <span className={'p-top-mv__btn__text c-btn-text wh'}>仲間募集中！採用情報をcheck</span>
+                <span className={'p-top-mv__arrow c-btn-arrow wh'}>→</span>
               </Link>
             </div>
-            <p className={styles.text + ' c-top-mv-text ind js-text-clip-anim__text'} ref={text2Ref}>
-              <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
+            <p className={'p-top-mv__text c-top-mv-text ind js-text-clip-anim__text'} ref={text2Ref}>
+              <span className={'p-top-mv__bgSpan js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
               安心と安全を、先導します。
             </p>
           </div>
       </div>
 
-      <div className={styles.thumbnailArea}>
-        <div className={styles.scrollArea + ' pc'} ref={scrollAreaRef}>
-          <div className={styles.circle}>
-              <div className={styles.scrollArrowArea}>
-                <p className={styles.scrollArrow + ' js-scroll-arrow'} ref={scrollArrowRef}>↓</p>
-                <p className={styles.scrollArrow + ' js-scroll-arrow'} ref={scrollArrow2Ref}>↓</p>
+      <div className={'p-top-mv__thumbnailArea'}>
+        <div className={'p-top-mv__scrollArea pc'} ref={scrollAreaRef}>
+          <div className={'p-top-mv__circle'}>
+              <div className={'p-top-mv__scrollArrowArea'}>
+                <p className={'p-top-mv__scrollArrow'} ref={scrollArrowRef}>↓</p>
+                <p className={'p-top-mv__scrollArrow'} ref={scrollArrow2Ref}>↓</p>
               </div>
           </div>
         </div>
         <Image
           src="/top/mv/thumb.webp"
           alt="堂々たる技術、誠実なサービス"
-          className={styles.thumbnail + ' pc'}
+          className={'p-top-mv__thumbnail pc'}
           width={4000}
           height={2000}
         />
         <Image
           src="/top/mv/thumb_sp.webp"
           alt="堂々たる技術、誠実なサービス"
-          className={styles.thumbnail + ' sp'}
+          className={'p-top-mv__thumbnail sp'}
           width={4000}
           height={2000}
         />

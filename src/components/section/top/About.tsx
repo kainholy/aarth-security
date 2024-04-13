@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import styles from '@/styles/section/top/About.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import gsap from "gsap";
@@ -58,23 +57,23 @@ function About() {
 
 
   return (
-    <section className={styles.about} id='about'>
-        <div className={styles.container}>
-            <div className={styles.overflow}>
-                <div className={styles.bgTextArea}>
-                    <p className={styles.bgText + ' c-top-about-bg-text ind'}>About Us</p>
-                    <p className={styles.bgText + ' c-top-about-bg-text ind'}>About Us</p>
-                    <p className={styles.bgText + ' c-top-about-bg-text ind'}>About Us</p>
+    <section className={'p-top-about__about'} id='about'>
+        <div className={'p-top-about__container'}>
+            <div className={'p-top-about__overflow'}>
+                <div className={'p-top-about__bgTextArea'}>
+                    <p className={'p-top-about__bgText c-top-about-bg-text ind'}>About Us</p>
+                    <p className={'p-top-about__bgText c-top-about-bg-text ind'}>About Us</p>
+                    <p className={'p-top-about__bgText c-top-about-bg-text ind'}>About Us</p>
                 </div>
             </div>
-            <div className={styles.content}>
-                <h2 className={styles.mainCopy + ' c-top-about-main-copy bk js-text-clip-anim__text'} ref={textRef}>
-                    <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
+            <div className={'p-top-about__content'}>
+                <h2 className={'p-top-about__mainCopy c-top-about-main-copy bk js-text-clip-anim__text'} ref={textRef}>
+                    <span className={'p-top-about__bgSpan js-text-clip-anim__bg-span'} ref={bgSpanRef}></span>
                     堂々たる技術<br />
                     誠実なサービス
                 </h2>
-                <div className={styles.subArea}>
-                    <p className={styles.subCopy + ' c-top-about-sub-copy bk'} ref={fadeUp1Ref}>
+                <div className={'p-top-about__subArea'}>
+                    <p className={'p-top-about__subCopy c-top-about-sub-copy bk'} ref={fadeUp1Ref}>
                         私たちは警備のプロ集団としての誇りを持ち、<br />
                         堂々たる技術と誠実なサービスを<br />
                         ご提供いたします。<br /><br />
@@ -85,16 +84,16 @@ function About() {
                         人とのつながりを大切にし、<br />
                         より安全で笑顔あふれる未来を築きます。
                     </p>
-                    <Link className={styles.btn + ' c-btn'} href="/about" ref={fadeUp2Ref} scroll={false}>
-                        <span className={styles.btn__text+' c-btn-text wh'}>私たちについて</span>
-                        <span className={styles.arrow+' c-btn-arrow wh'}>→</span>
+                    <Link className={'p-top-about__btn c-btn'} href="/about" ref={fadeUp2Ref} scroll={false}>
+                        <span className={'p-top-about__btn__text c-btn-text wh'}>私たちについて</span>
+                        <span className={'p-top-about__arrow c-btn-arrow wh'}>→</span>
                     </Link>
                 </div>
             </div>
         </div>
-        <div className={styles.imgContainer}>
-            <div className={styles.imgArea}>
-                <div className={styles.img} ref={parallaxRef}></div>
+        <div className={'p-top-about__imgContainer'}>
+            <div className={'p-top-about__imgArea'}>
+                <div className={'p-top-about__img'} ref={parallaxRef}></div>
             </div>
         </div>
     </section>

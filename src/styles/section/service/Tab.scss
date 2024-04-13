@@ -1,0 +1,41 @@
+@import '../../foundation/color.scss';
+@import '../../foundation/mixin.scss';
+
+.p-service-tab {
+    &__container {
+        display: flex;
+        border-bottom: 1px solid $black;
+    }
+    &__button {
+        width: calc(100% / 3);
+        height: 14.8rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sp {
+            height: 6.8rem;
+        }
+    }
+    &__activeButton {
+        background: $indigo;
+        .p-service-tab__number {
+            color: $white;
+        }
+        .p-service-tab__text {
+            color: $white;
+        }
+    }
+    &__number {
+        position: absolute;
+        top: .8rem;
+        left: .8rem;
+        @include sp {
+            top: .4rem;
+            left: .4rem;
+        }
+    }
+    &__button + &__button {
+        border-left: 1px solid $black;
+    }
+}

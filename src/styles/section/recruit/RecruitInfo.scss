@@ -1,0 +1,82 @@
+@import "../../foundation/color.scss";
+@import "../../foundation/font.scss";
+@import "../../foundation/mixin.scss";
+
+.p-recruit-recruit-info {
+    &__container {
+        padding-top:12rem;
+        padding-bottom: 12rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 144rem;
+        padding-left: min(calc(190 / 1440 * 100%), 19rem);
+        padding-right: min(calc(190 / 1440 * 100%), 19rem);
+        @include sp {
+            padding-top: 0rem;
+            padding-bottom: 6.4rem;
+            padding-left: min(calc(20 / 375 * 100%), 2rem);
+            padding-right: min(calc(20 / 375 * 100%), 2rem);
+        }
+    }
+    &__content {
+        width: 100%;
+        padding-top: 4rem;
+    }
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    &__tr {
+        width: 100%;
+    }
+    &__tr + &__tr{
+        border-top: 2px solid $bg-gray;
+    }
+    &__th {
+        padding: 1.8rem 0 1.8rem 3.2rem;
+        width: 30%;
+        background-color: rgba(0, 0, 0, .1);
+        @include sp {
+            width: 35%;
+            padding-left: 1.2rem;
+        }
+    }
+    &__td {
+        width: 70%;
+        padding: 1.8rem 0 1.8rem 2.4rem;
+        white-space: pre-wrap;
+        @include sp {
+            width: 65%;
+            padding-left: 1.2rem;
+            padding-right: 0rem;
+        }
+    }
+    &__name:not(:first-child) {
+        padding-top: .8rem;
+    }
+    &__name{ 
+        font-weight: $medium;
+        padding-bottom: .4rem;
+    }
+    &__department {
+        padding-left: 2.4rem;
+        font-size: clamp(1.2rem, calc(14 / 1440 * 100vw), 1.4rem);
+    }
+    &__caption {
+        font-size: clamp(1rem, calc(12 / 1440 * 100vw), 1.2rem);
+    }
+    &__btn {
+        margin-top: 4rem;
+        width: fit-content;
+        margin-left: auto;
+        display: flex;
+        justify-content: right;
+        padding: 2rem 3.2rem 2rem 4rem;
+        @include sp {
+            margin-top: 2.4rem;
+        }
+    }
+    &__btn__text {
+        font-size: 1.6rem;
+    }
+}

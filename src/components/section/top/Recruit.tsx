@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import styles from '@/styles/section/top/Recruit.module.scss'
 import Link from 'next/link'
-import Image from 'next/image'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -61,21 +59,21 @@ function Recruit() {
 
     })
   return (
-    <section id='recruit' className={styles.recruit}>
-        <div className={styles.container}>
-            <div className={styles.inner}>
-                <div className={styles.textArea}>
-                    <h2 className={styles.title+' c-title2'}>
-                        <span className={styles.titleEn+' c-title2-en ind js-text-clip-anim__text'} ref={text1Ref}>
-                            <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpan1Ref}></span>
+    <section id='recruit' className={'p-top-recruit__recruit'}>
+        <div className={'p-top-recruit__container'}>
+            <div className={'p-top-recruit__inner'}>
+                <div className={'p-top-recruit__textArea'}>
+                    <h2 className={'p-top-recruit__title c-title2'}>
+                        <span className={'p-top-recruit__titleEn c-title2-en ind js-text-clip-anim__text'} ref={text1Ref}>
+                            <span className={'p-top-recruit__bgSpan js-text-clip-anim__bg-span'} ref={bgSpan1Ref}></span>
                             Recruit
                         </span>
-                        <span className={styles.titleJa + ' c-title2-ja ind js-text-clip-anim__text'} ref={text2Ref}>
-                            <span className={styles.bgSpan + ' js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
+                        <span className={'p-top-recruit__titleJa c-title2-ja ind js-text-clip-anim__text'} ref={text2Ref}>
+                            <span className={'p-top-recruit__bgSpan js-text-clip-anim__bg-span'} ref={bgSpan2Ref}></span>
                             採用情報
                         </span>
                     </h2>
-                    <p className={styles.text+' c-top-recruit-text gr'} ref={fadeUpTextRef}>
+                    <p className={'p-top-recruit__text c-top-recruit-text gr'} ref={fadeUpTextRef}>
                         豊富な経験を持つ仲間と一緒に警備のプロとして、<br />
                         安心安全な未来を築きませんか。<br /><br />
 
@@ -86,14 +84,14 @@ function Recruit() {
                         警備業は人が財産です。<br />
                         共に切磋琢磨できる新たな仲間を歓迎します。
                     </p>
-                    <Link href="/recruit" className={styles.btn+" c-btn"} ref={fadeUpButtonRef} scroll={false}>
-                        <span className={styles.btn__text+' c-btn-text wh'}>詳しく見る</span>
-                        <span className={styles.btn__arrow+' c-btn-text wh'}>→</span>
+                    <Link href="/recruit" className={'p-top-recruit__btn c-btn'} ref={fadeUpButtonRef} scroll={false}>
+                        <span className={'p-top-recruit__btn__text c-btn-text wh'}>詳しく見る</span>
+                        <span className={'p-top-recruit__btn__arrow c-btn-text wh'}>→</span>
                     </Link>
                 </div>
             </div>
-            <div className={styles.imgArea}>
-                <div className={styles.img} ref={parallaxRef}></div>
+            <div className={'p-top-recruit__imgArea'}>
+                <div className={'p-top-recruit__img'} ref={parallaxRef}></div>
             </div>
         </div>
     </section>
