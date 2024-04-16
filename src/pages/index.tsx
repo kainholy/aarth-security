@@ -9,6 +9,8 @@ import Access from "@/components/section/common/Access";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { motion } from 'framer-motion'
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import { client } from "@/../libs/client";
 
 const headData = {
   title: "Aarth Security | 安全と安心を、先導します。",
@@ -17,7 +19,18 @@ const headData = {
   ogUrl: "http://aarth-security/index.html"
 }
 
-export default function Home() {
+type Props =  InferGetStaticPropsType<typeof getStaticProps>
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await client.get({ endpoint: "topnews" });
+  return {
+      props: {
+          news: data.contents,
+      },
+  };
+}
+
+const main: NextPage<Props> = ({ news }) => {
   return (
     <>
         <Head>
@@ -45,7 +58,7 @@ export default function Home() {
             <About />
             <Service />
             <Recruit />
-            <News />
+            <News news={news}/>
             <Contact />
             <Access />
           </main>
@@ -54,3 +67,5 @@ export default function Home() {
     </>
   );
 }
+
+export default main;

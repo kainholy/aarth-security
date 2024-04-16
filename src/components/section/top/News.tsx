@@ -1,9 +1,18 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { News } from '../../../pages/api/news'
+
+
 gsap.registerPlugin(ScrollTrigger)
 
-function News() {
+type Props = {
+    news: News[]
+}
+
+export const NewsList = ( props: Props ) => {
+    const { news } = props;
+    
     const fadeUpRef = useRef(null)
     useEffect(() => {
         const fadeUp = fadeUpRef.current;
@@ -29,18 +38,12 @@ function News() {
                     </h2>
                 </div>
                 <div className={'p-top-news__contents'}>
-                    <div className={'p-top-news__item'}>
-                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
-                    </div>
-                    <div className={'p-top-news__item'}>
-                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
-                    </div>
-                    <div className={'p-top-news__item'}>
-                        <p className={'p-top-news__item__date c-top-news-date wh-gr'}>2021.01.01</p>
-                        <p className={'p-top-news__item__text c-body1 wh'}>サイトをリニューアルしました。</p>
-                    </div>
+                    {news.slice(0, 3).map((item, index) => (
+                        <div className={'p-top-news__item'} key={index}>
+                            <p className={'p-top-news__item__date c-top-news-date wh-gr'}>{new Date(item.publishedAt).toLocaleDateString()}</p>
+                            <p className={'p-top-news__item__text c-body1 wh'}>{item.title}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
@@ -48,4 +51,4 @@ function News() {
   )
 }
 
-export default News
+export default NewsList
