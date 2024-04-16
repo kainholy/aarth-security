@@ -46,6 +46,8 @@
         aspect-ratio: 589 / 792.47;
         @include sp {
             width: 100%;
+            max-width: 40rem;
+            margin: 0 auto;
         }
     }
     &__img {

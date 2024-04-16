@@ -57,6 +57,7 @@
             @include sp {
                 width: 80%;
                 margin: 0 auto;
+                max-width: 28rem;
             }
         }
         &__img {

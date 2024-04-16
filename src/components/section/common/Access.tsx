@@ -55,7 +55,7 @@ function Access() {
                             <span className={'p-common-access__bold --bold'}>本社</span><br />
                             〒120-0006<br />
                             東京都足立区谷中1-23-15<br />
-                            TEL 03-5697-9333<br />
+                            TEL 03-5697-9336<br />
                             FAX 03-5697-9336<br /><br />
                         </p>
                         <p className={'p-common-access__text c-body2'}>
