@@ -2,7 +2,7 @@
 @import "../../foundation/font.scss";
 @import "../../foundation/mixin.scss";
 
-.p-about-company {
+.p-about-company-info {
     &__container {
         padding-top:12rem;
         padding-bottom: 12rem;
@@ -64,5 +64,14 @@
     }
     &__caption {
         font-size: clamp(1rem, calc(12 / 1440 * 100vw), 1.2rem);
+    }
+    &__imgArea {
+        margin-top: 2.4rem;
+        margin-left: auto;
+        width: 70%;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
     }
 }
