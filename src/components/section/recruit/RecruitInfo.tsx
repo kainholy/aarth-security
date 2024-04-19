@@ -23,10 +23,6 @@ const data = [
         text: '◎制服貸与\n◎交通費全額支給\n◎残業代別途支給\n◎直行直帰OK！\n◎早期業務終了時にも日給満額保証！\n◎社会保険完備',
     },
     {
-        title: '研修',
-        text: '警備業法に基づき、3日間の研修を実施しています。',
-    },
-    {
         title: '面接',
         text: '03-5697-9333',
     },
@@ -55,6 +51,7 @@ function RecruitInfo() {
                     <tr className={'p-recruit-recruit-info__tr'}>
                         <th className={'p-recruit-recruit-info__th c-about-recruit-info-title'}>研修</th>
                         <td className={'p-recruit-recruit-info__td c-about-recruit-info-text'}>
+                            <p>警備業法に基づき、3日間の研修を実施しています。</p>
                             <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
                             <p className={'p-recruit-recruit-info__caption'}>※1日9,000円・3日間27,000円</p>
                             <p className={'p-recruit-recruit-info__caption'}>※スケジュールは3日連続でなくてOK！土日も研修可。</p>
