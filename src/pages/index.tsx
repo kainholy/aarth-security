@@ -42,6 +42,7 @@ const main: NextPage<Props> = ({ news }) => {
           <meta property="og:title" content={headData.title}/>
           <meta property="og:description" content={headData.description}/>
           <meta property="og:url" content={headData.ogUrl} />
+          <meta property="og:site_name" content={headData.title}/>
         </Head>
         
         <motion.div
