@@ -16,7 +16,7 @@ const headData = {
   title: "Aarth Security | 安全と安心を、先導します。",
   description: "アースセキュリティは、企業やイベントの安全を守るための専門警備会社です。雑踏警備、交通誘導、イベント警備など、幅広いサービスで安心を提供します。新入社員募集情報もこちらから。",
   keywords: "アースセキュリティ, 警備会社, 雑踏警備, 交通誘導警備, イベント警備, 企業警備, 採用情報, 安全保障, セキュリティサービス, Aarth Security, Aarth, セキュリティ",
-  ogUrl: "http://aarth-security/index.html"
+  ogUrl: "http://aarth-security/"
 }
 
 type Props =  InferGetStaticPropsType<typeof getStaticProps>

@@ -13,7 +13,7 @@ const headData = {
   title: "サービス内容 | Aarth Security",
   description: "アースセキュリティのサービス内容ページへようこそ。私たちは雑踏警備、交通誘導、イベント警備など、あらゆるニーズに応じた専門的なセキュリティサービスを提供します。安心と安全を守るために、最先端の技術と熟練のプロフェッショナルがあなたのニーズに応えます。",
   keywords: "セキュリティサービス, 雑踏警備, 交通誘導, イベント警備, プロフェッショナル警備, 安全管理, セキュリティ技術, 安心安全, アースセキュリティサービス",
-  ogUrl: "http://aarth-security/service/index.html"
+  ogUrl: "http://aarth-security/service/"
 }
 
 function Service() {

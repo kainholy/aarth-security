@@ -17,7 +17,7 @@ const headData = {
   title: "会社概要 | Aarth Security",
   description: "アースセキュリティは、安全と安心を社会に提供することを使命とする警備会社です。「堂々たる技術で安全を届ける」「誠実なサービスを提供する」「初心を忘れない」を経営理念に掲げ、業界のリーダーとしての地位を築いています。私たちの物語、使命、そして未来のビジョンを知ってください。",
   keywords: "アースセキュリティ, 会社概要, 経営理念, ミッション, 代表者メッセージ, 安全保障サービス, 社会貢献, セキュリティ業界, 企業文化, 安全と安心",
-  ogUrl: "http://aarth-security/about/index.html",
+  ogUrl: "http://aarth-security/about/",
 }
 
 function About() {
