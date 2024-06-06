@@ -74,7 +74,8 @@ function About() {
                 </h2>
                 <div className={'p-top-about__subArea'}>
                     <p className={'p-top-about__subCopy c-top-about-sub-copy bk'} ref={fadeUp1Ref}>
-                        私たちは警備のプロ集団としての誇りを持ち、<br />
+                        私たちはアースセキュリティは<br />
+                        警備のプロ集団としての誇りを持ち、<br />
                         堂々たる技術と誠実なサービスを<br />
                         ご提供いたします。<br /><br />
 

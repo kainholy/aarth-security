@@ -20,7 +20,7 @@ function Header() {
                     <Link className={'l-header__logoArea'} href='/' scroll={false}>
                         <Image
                             src="/top/mv/logo.webp"
-                            alt="Aarth Security Logo"
+                            alt="アースセキュリティのロゴ"
                             className={'l-header__logo'}
                             width={300}
                             height={300}

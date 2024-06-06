@@ -52,7 +52,8 @@ function Contact() {
             </h2>
             <p className={'p-common-contact__text c-body2 wh'}>
                 イベント警備、交通誘導、駐車場警備など<br />
-                警備のことならどんなことでもお気軽にご相談ください。
+                警備のことならどんなことでも<br />
+                アースセキュリティにお気軽にご相談ください。
             </p>
             <Link href="tel:0356979333" className={'p-common-contact__btn c-btn'}>
                 <span className={'p-common-contact__btn__text c-btn-text ind'}>相談する</span>

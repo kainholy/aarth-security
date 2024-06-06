@@ -101,14 +101,14 @@ function Mv() {
         </div>
         <Image
           src="/top/mv/thumb.webp"
-          alt="堂々たる技術、誠実なサービス"
+          alt="アースセキュリティ"
           className={'p-top-mv__thumbnail pc'}
           width={4000}
           height={2000}
         />
         <Image
           src="/top/mv/thumb_sp.webp"
-          alt="堂々たる技術、誠実なサービス"
+          alt="アースセキュリティ"
           className={'p-top-mv__thumbnail sp'}
           width={4000}
           height={2000}
