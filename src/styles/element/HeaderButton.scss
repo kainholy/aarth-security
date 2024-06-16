@@ -10,13 +10,6 @@
         gap: .6rem;
         z-index: 1000;
     }
-    &__headerButton[aria-expanded="true"] > .line1 {
-        transform: translate(2px, 4px) rotateZ(-45deg);
-    }
-    
-    &__headerButton[aria-expanded="true"] > .line2 {
-        transform: translate(2px, -3px) rotateZ(45deg);
-    }
     
     &__line1,
     &__line2 {
@@ -27,5 +20,12 @@
         background-color: $indigo;
         transition: .3s ease-out;
         transform-origin: center;
+    }
+    &__headerButton[aria-expanded="true"] > .line1 {
+        transform: translate(2px, 4px) rotateZ(-20deg) rotateY(180deg);
+    }
+    
+    &__headerButton[aria-expanded="true"] > .line2 {
+        transform: translate(2px, -3px) rotateZ(20deg) rotateY(180deg);
     }
 }
